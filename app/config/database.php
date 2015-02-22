@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'neo4j',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -51,6 +51,14 @@ return array(
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
+
+        'neo4j' => [
+            'driver' => 'neo4j',
+            'host'   => 'tryindication.sb02.stations.graphenedb.com',
+            'port'   => '24789',
+            'username' => 'tryindication',
+            'password' => 'a2n97t8Oaec0G69D1wIb'
+        ],
 
 		'mysql' => array(
 			'driver'    => 'mysql',

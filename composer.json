@@ -6,7 +6,8 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "vinelab/http": "dev-master"
+        "vinelab/http": "dev-master",
+        "vinelab/neoeloquent": "*"
 	},
 	"autoload": {
 		"classmap": [

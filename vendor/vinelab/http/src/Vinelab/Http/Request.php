@@ -91,6 +91,9 @@ Class Request implements RequestInterface{
 
 	public function send()
 	{
+
+        //var_dump($this); die;
+
 		$cURLOptions = array(
 			CURLOPT_HTTP_VERSION   => $this->getCurlHttpVersion(),
 			CURLOPT_URL            => $this->url,
