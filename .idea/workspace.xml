@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="48" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-12.5" vertical-offset="1470" max-vertical-offset="3060">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="36" selection-start="194" selection-end="194" vertical-scroll-proportion="0.12883435" vertical-offset="0" max-vertical-offset="815">
+            <state line="8" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.14723927" vertical-offset="0" max-vertical-offset="815">
               <folding />
             </state>
           </provider>
@@ -187,16 +178,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="48" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-12.5" vertical-offset="1470" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="194" selection-end="194" vertical-scroll-proportion="0.12883435" vertical-offset="0" max-vertical-offset="815">
+        <state line="8" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.14723927" vertical-offset="0" max-vertical-offset="815">
           <folding />
         </state>
       </provider>
