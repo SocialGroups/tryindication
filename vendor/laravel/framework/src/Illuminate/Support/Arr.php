@@ -1,11 +1,11 @@
 <?php namespace Illuminate\Support;
 
 use Closure;
-use Illuminate\Support\Traits\Macroable;
+use Illuminate\Support\Traits\MacroableTrait;
 
 class Arr {
 
-	use Macroable;
+	use MacroableTrait;
 
 	/**
 	 * Add an element to an array using "dot" notation if it doesn't exist.
@@ -279,7 +279,7 @@ class Arr {
 
 		foreach ($array as $item)
 		{
-			$itemValue = data_get($item, $value);
+			$itemValue = is_object($item) ? $item->{$value} : $item[$value];
 
 			// If the key is "null", we will just append the value to the array and keep
 			// looping. Otherwise we will key the array using the value of the key we
@@ -290,7 +290,7 @@ class Arr {
 			}
 			else
 			{
-				$itemKey = data_get($item, $key);
+				$itemKey = is_object($item) ? $item->{$key} : $item[$key];
 
 				$results[$itemKey] = $itemValue;
 			}

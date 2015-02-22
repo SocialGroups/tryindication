@@ -1,5 +1,3 @@
 <?php namespace Illuminate\Encryption;
 
-use InvalidArgumentException;
-
-class InvalidKeyException extends InvalidArgumentException {}
+class InvalidKeyException extends \InvalidArgumentException {}

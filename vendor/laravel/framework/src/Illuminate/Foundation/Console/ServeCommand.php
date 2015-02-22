@@ -26,17 +26,34 @@ class ServeCommand extends Command {
 	 */
 	public function fire()
 	{
-		chdir($this->laravel->basePath());
+		$this->checkPhpVersion();
+
+		chdir($this->laravel['path.base']);
 
 		$host = $this->input->getOption('host');
 
 		$port = $this->input->getOption('port');
 
-		$public = $this->laravel->publicPath();
+		$public = $this->laravel['path.public'];
 
 		$this->info("Laravel development server started on http://{$host}:{$port}");
 
 		passthru('"'.PHP_BINARY.'"'." -S {$host}:{$port} -t \"{$public}\" server.php");
+	}
+
+	/**
+	 * Check the current PHP version is >= 5.4.
+	 *
+	 * @return void
+	 *
+	 * @throws \Exception
+	 */
+	protected function checkPhpVersion()
+	{
+		if (version_compare(PHP_VERSION, '5.4.0', '<'))
+		{
+			throw new \Exception('This PHP binary is not version 5.4 or greater.');
+		}
 	}
 
 	/**

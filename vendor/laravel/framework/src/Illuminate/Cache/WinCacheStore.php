@@ -1,8 +1,6 @@
 <?php namespace Illuminate\Cache;
 
-use Illuminate\Contracts\Cache\Store;
-
-class WinCacheStore extends TaggableStore implements Store {
+class WinCacheStore extends TaggableStore implements StoreInterface {
 
 	/**
 	 * A string that should be prepended to keys.
@@ -91,11 +89,11 @@ class WinCacheStore extends TaggableStore implements Store {
 	 * Remove an item from the cache.
 	 *
 	 * @param  string  $key
-	 * @return bool
+	 * @return void
 	 */
 	public function forget($key)
 	{
-		return wincache_ucache_delete($this->prefix.$key);
+		wincache_ucache_delete($this->prefix.$key);
 	}
 
 	/**

@@ -7,10 +7,10 @@ use ArrayIterator;
 use CachingIterator;
 use JsonSerializable;
 use IteratorAggregate;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Arrayable;
+use Illuminate\Support\Contracts\JsonableInterface;
+use Illuminate\Support\Contracts\ArrayableInterface;
 
-class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate, Jsonable, JsonSerializable {
+class Collection implements ArrayAccess, ArrayableInterface, Countable, IteratorAggregate, JsonableInterface, JsonSerializable {
 
 	/**
 	 * The items contained in the collection.
@@ -22,14 +22,12 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Create a new collection.
 	 *
-	 * @param  mixed  $items
+	 * @param  array  $items
 	 * @return void
 	 */
-	public function __construct($items = array())
+	public function __construct(array $items = array())
 	{
-		$items = is_null($items) ? [] : $this->getArrayableItems($items);
-
-		$this->items = (array) $items;
+		$this->items = $items;
 	}
 
 	/**
@@ -38,9 +36,13 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 * @param  mixed  $items
 	 * @return static
 	 */
-	public static function make($items = null)
+	public static function make($items)
 	{
-		return new static($items);
+		if (is_null($items)) return new static;
+
+		if ($items instanceof Collection) return $items;
+
+		return new static(is_array($items) ? $items : array($items));
 	}
 
 	/**
@@ -75,32 +77,23 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Determine if an item exists in the collection.
 	 *
-	 * @param  mixed  $key
 	 * @param  mixed  $value
 	 * @return bool
 	 */
-	public function contains($key, $value = null)
+	public function contains($value)
 	{
-		if (func_num_args() == 2)
+		if ($value instanceof Closure)
 		{
-			return $this->contains(function($k, $item) use ($key, $value)
-			{
-				return data_get($item, $key) == $value;
-			});
+			return ! is_null($this->first($value));
 		}
 
-		if ($key instanceof Closure)
-		{
-			return ! is_null($this->first($key));
-		}
-
-		return in_array($key, $this->items);
+		return in_array($value, $this->items);
 	}
 
 	/**
 	 * Diff the collection with the given items.
 	 *
-	 * @param  \Illuminate\Support\Collection|\Illuminate\Contracts\Support\Arrayable|array  $items
+	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array  $items
 	 * @return static
 	 */
 	public function diff($items)
@@ -141,35 +134,6 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	public function filter(Closure $callback)
 	{
 		return new static(array_filter($this->items, $callback));
-	}
-
-	/**
-	 * Filter items by the given key value pair.
-	 *
-	 * @param  string  $key
-	 * @param  mixed  $value
-	 * @param  bool  $strict
-	 * @return static
-	 */
-	public function where($key, $value, $strict = true)
-	{
-		return $this->filter(function($item) use ($key, $value, $strict)
-		{
-			return $strict ? data_get($item, $key) === $value
-                           : data_get($item, $key) == $value;
-		});
-	}
-
-	/**
-	 * Filter items by the given key value pair using loose comparison.
-	 *
-	 * @param  string  $key
-	 * @param  mixed  $value
-	 * @return static
-	 */
-	public function whereLoose($key, $value)
-	{
-		return $this->where($key, $value, false);
 	}
 
 	/**
@@ -217,7 +181,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 */
 	public function forget($key)
 	{
-		$this->offsetUnset($key);
+		unset($this->items[$key]);
 	}
 
 	/**
@@ -274,23 +238,20 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	}
 
 	/**
-	 * Key an associative array by a field or using a closure.
+	 * Key an associative array by a field.
 	 *
-	 * @param  string|\Closure  $keyBy
+	 * @param  string  $keyBy
 	 * @return static
 	 */
 	public function keyBy($keyBy)
 	{
-		if ( ! $keyBy instanceof Closure)
-		{
-			return $this->keyBy($this->valueRetriever($keyBy));
-		}
-
 		$results = [];
 
 		foreach ($this->items as $item)
 		{
-			$results[$keyBy($item)] = $item;
+			$key = data_get($item, $keyBy);
+
+			$results[$key] = $item;
 		}
 
 		return new static($results);
@@ -322,7 +283,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Intersect the collection with the given items.
 	 *
- 	 * @param  \Illuminate\Support\Collection|\Illuminate\Contracts\Support\Arrayable|array  $items
+ 	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array  $items
 	 * @return static
 	 */
 	public function intersect($items)
@@ -343,11 +304,11 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Get the keys of the collection items.
 	 *
-	 * @return static
+	 * @return array
 	 */
 	public function keys()
 	{
-		return new static(array_keys($this->items));
+		return array_keys($this->items);
 	}
 
 	/**
@@ -386,24 +347,12 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Merge the collection with the given items.
 	 *
-	 * @param  \Illuminate\Support\Collection|\Illuminate\Contracts\Support\Arrayable|array  $items
+	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array  $items
 	 * @return static
 	 */
 	public function merge($items)
 	{
 		return new static(array_merge($this->items, $this->getArrayableItems($items)));
-	}
-
-	/**
-	 * "Paginate" the collection by slicing it into a smaller collection.
-	 *
-	 * @param  int  $page
-	 * @param  int  $perPage
-	 * @return static
-	 */
-	public function forPage($page, $perPage)
-	{
-		return new static(array_slice($this->items, ($page - 1) * $perPage, $perPage));
 	}
 
 	/**
@@ -435,7 +384,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 */
 	public function push($value)
 	{
-		$this->offsetSet(null, $value);
+		$this->items[] = $value;
 	}
 
 	/**
@@ -459,7 +408,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 */
 	public function put($key, $value)
 	{
-		$this->offsetSet($key, $value);
+		$this->items[$key] = $value;
 	}
 
 	/**
@@ -470,7 +419,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 */
 	public function random($amount = 1)
 	{
-		if ($this->isEmpty()) return;
+		if ($this->isEmpty()) return null;
 
 		$keys = array_rand($this->items, $amount);
 
@@ -667,7 +616,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	/**
 	 * Get the sum of the given values.
 	 *
-	 * @param  \Closure|null  $callback
+	 * @param  \Closure  $callback
 	 * @return mixed
 	 */
 	public function sum($callback = null)
@@ -732,7 +681,9 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	 */
 	public function values()
 	{
-		return new static(array_values($this->items));
+		$this->items = array_values($this->items);
+
+		return $this;
 	}
 
 	/**
@@ -758,7 +709,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	{
 		return array_map(function($value)
 		{
-			return $value instanceof Arrayable ? $value->toArray() : $value;
+			return $value instanceof ArrayableInterface ? $value->toArray() : $value;
 
 		}, $this->items);
 	}
@@ -878,9 +829,9 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 	}
 
 	/**
-	 * Results array of items from Collection or Arrayable.
+	 * Results array of items from Collection or ArrayableInterface.
 	 *
-  	 * @param  \Illuminate\Support\Collection|\Illuminate\Contracts\Support\Arrayable|array  $items
+  	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array  $items
 	 * @return array
 	 */
 	protected function getArrayableItems($items)
@@ -889,7 +840,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
 		{
 			$items = $items->all();
 		}
-		elseif ($items instanceof Arrayable)
+		elseif ($items instanceof ArrayableInterface)
 		{
 			$items = $items->toArray();
 		}

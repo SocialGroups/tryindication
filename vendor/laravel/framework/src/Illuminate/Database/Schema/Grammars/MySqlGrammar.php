@@ -386,7 +386,7 @@ class MySqlGrammar extends Grammar {
 	 */
 	protected function typeFloat(Fluent $column)
 	{
-		return $this->typeDouble($column);
+		return "float({$column->total}, {$column->places})";
 	}
 
 	/**
@@ -436,17 +436,6 @@ class MySqlGrammar extends Grammar {
 	protected function typeEnum(Fluent $column)
 	{
 		return "enum('".implode("', '", $column->allowed)."')";
-	}
-
-	/**
-	 * Create the column definition for a json type.
-	 *
-	 * @param  \Illuminate\Support\Fluent  $column
-	 * @return string
-	 */
-	protected function typeJson(Fluent $column)
-	{
-		return 'text';
 	}
 
 	/**

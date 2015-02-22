@@ -1,15 +1,13 @@
 <?php namespace Illuminate\Http;
 
-use BadMethodCallException;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
 use Symfony\Component\HttpFoundation\Cookie;
 use Illuminate\Session\Store as SessionStore;
-use Illuminate\Contracts\Support\MessageProvider;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Symfony\Component\HttpFoundation\RedirectResponse as BaseRedirectResponse;
+use Illuminate\Support\Contracts\MessageProviderInterface;
 
-class RedirectResponse extends BaseRedirectResponse {
+class RedirectResponse extends \Symfony\Component\HttpFoundation\RedirectResponse {
 
 	/**
 	 * The request instance.
@@ -75,7 +73,7 @@ class RedirectResponse extends BaseRedirectResponse {
 	/**
 	 * Add multiple cookies to the response.
 	 *
-	 * @param  array  $cookies
+	 * @param  array  $cookie
 	 * @return $this
 	 */
 	public function withCookies(array $cookies)
@@ -131,7 +129,7 @@ class RedirectResponse extends BaseRedirectResponse {
 	/**
 	 * Flash a container of errors to the session.
 	 *
-	 * @param  \Illuminate\Contracts\Support\MessageProvider|array  $provider
+	 * @param  \Illuminate\Support\Contracts\MessageProviderInterface|array  $provider
 	 * @param  string  $key
 	 * @return $this
 	 */
@@ -149,12 +147,12 @@ class RedirectResponse extends BaseRedirectResponse {
 	/**
 	 * Parse the given errors into an appropriate value.
 	 *
-	 * @param  \Illuminate\Contracts\Support\MessageProvider|array  $provider
+	 * @param  \Illuminate\Support\Contracts\MessageProviderInterface|array  $provider
 	 * @return \Illuminate\Support\MessageBag
 	 */
 	protected function parseErrors($provider)
 	{
-		if ($provider instanceof MessageProvider)
+		if ($provider instanceof MessageProviderInterface)
 		{
 			return $provider->getMessageBag();
 		}
@@ -165,7 +163,7 @@ class RedirectResponse extends BaseRedirectResponse {
 	/**
 	 * Get the request instance.
 	 *
-	 * @return \Illuminate\Http\Request
+	 * @return  \Illuminate\Http\Request
 	 */
 	public function getRequest()
 	{
@@ -220,7 +218,7 @@ class RedirectResponse extends BaseRedirectResponse {
 			return $this->with(snake_case(substr($method, 4)), $parameters[0]);
 		}
 
-		throw new BadMethodCallException("Method [$method] does not exist on Redirect.");
+		throw new \BadMethodCallException("Method [$method] does not exist on Redirect.");
 	}
 
 }

@@ -2,12 +2,8 @@
 
 use FilesystemIterator;
 use Symfony\Component\Finder\Finder;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 class Filesystem {
-
-	use Macroable;
 
 	/**
 	 * Determine if a file exists.
@@ -26,7 +22,7 @@ class Filesystem {
 	 * @param  string  $path
 	 * @return string
 	 *
-	 * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+	 * @throws FileNotFoundException
 	 */
 	public function get($path)
 	{
@@ -41,7 +37,7 @@ class Filesystem {
 	 * @param  string  $path
 	 * @return mixed
 	 *
-	 * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+	 * @throws FileNotFoundException
 	 */
 	public function getRequire($path)
 	{
