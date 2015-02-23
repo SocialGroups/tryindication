@@ -19,7 +19,7 @@ trait UserTrait {
 	 */
 	public function getAuthPassword()
 	{
-		return $this->password;
+		return $this->key;
 	}
 
 	/**

@@ -6,5 +6,3 @@ class Testando extends NeoEloquent {
 
     protected $fillable = ['name', 'email'];
 }
-
-$user = Testando::create(['name' => 'Some Name', 'email' => 'some@email.com']);

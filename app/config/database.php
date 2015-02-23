@@ -63,9 +63,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'database'  => 'tryindication',
+			'username'  => 'root',
+			'password'  => 'lounge0197',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -90,6 +90,14 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
+
+        'redis' => [
+
+            'cluster' => false,
+
+            'default' => ['host' => '127.0.0.1', 'port' => 6379],
+
+        ],
 
 	),
 

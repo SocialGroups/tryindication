@@ -12,3 +12,9 @@
 */
 
 Route::get('/', 'HomeController@showWelcome');
+
+Route::resource('product', 'ProductController');
+
+Route::resource('client', 'ClientController');
+
+Route::resource('relationship', 'RelationshipController');
