@@ -4,5 +4,5 @@ class SetGraphClient extends NeoEloquent {
 
     protected $label = 'client';
 
-    protected $fillable = ['companyHash', 'clientId', 'clientEmail'];
+    protected $fillable = ['clientId','companyHash', 'clientEmail'];
 }

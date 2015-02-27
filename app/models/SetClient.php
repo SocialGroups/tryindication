@@ -9,8 +9,8 @@ class SetClient extends Eloquent
 
             array(
 
-                'companyHash'   => $data->companyHash,
                 'clientId'      => $data->clientId,
+                'companyHash'   => $data->companyHash,
                 'clientEmail'   => $data->clientEmail
 
             )

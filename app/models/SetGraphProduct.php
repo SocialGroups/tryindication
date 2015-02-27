@@ -4,7 +4,7 @@ class SetGraphProduct extends NeoEloquent {
 
     protected $label = 'product';
 
-    protected $fillable = ['companyHash', 'productId', 'productPrice', 'productImg'];
+    protected $fillable = ['productId','companyHash', 'productPrice', 'productImg', 'productStatus'];
 
     public function relationshipType($relationshipType)
     {

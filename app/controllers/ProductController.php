@@ -37,13 +37,14 @@ class ProductController extends \BaseController {
 
         $post = new stdClass();
 
-        $post->companyHash  = Input::get('companyHash');
-        $post->productId    = Input::get('productId');
-        $post->productPrice = Input::get('productPrice');
-        $post->productImg   = Input::get('productImg');
+        $post->companyHash      = Input::get('companyHash');
+        $post->productId        = Input::get('productId');
+        $post->productPrice     = Input::get('productPrice');
+        $post->productImg       = Input::get('productImg');
+        $post->productStatus    = Input::get('productStatus');
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->setIndication($post);
+        $setProductNeo4j->createProduct($post);
 
 	}
 
@@ -72,7 +73,16 @@ class ProductController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+        $post = new stdClass();
+
+        $post->companyHash      = Input::get('companyHash');
+        $post->productId        = Input::get('productId');
+        $post->productPrice     = Input::get('productPrice');
+        $post->productImg       = Input::get('productImg');
+        $post->productStatus    = Input::get('productStatus');
+
+        $setProductNeo4j = new SetProduct();
+        $setProductNeo4j->updateProduct($post);
 	}
 
 

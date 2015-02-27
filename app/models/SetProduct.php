@@ -2,22 +2,22 @@
 
 class SetProduct extends Eloquent
 {
-    public function setIndication($data)
+    public function createProduct($data)
     {
 
-        $user = SetGraphProduct::create(
+        $product = SetGraphProduct::create(
 
             array(
 
-                'companyHash'   => $data->companyHash,
                 'productId'     => $data->productId,
+                'companyHash'   => $data->companyHash,
                 'productPrice'  => $data->productPrice,
-                'productImg'    => $data->productImg
+                'productImg'    => $data->productImg,
+                'productStatus' => $data->productStatus
 
             )
         );
 
     }
-
 
 }
