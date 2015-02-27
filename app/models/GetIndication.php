@@ -10,9 +10,7 @@ class GetIndication extends Eloquent
 
         $redis = Redis::connection();
 
-        return json_encode($redis->get($id));
-
-
+        return $redis->get($id);
 
         $user = Testando::create(['name' => 'Some Name', 'email' => 'some@email.com']);
 

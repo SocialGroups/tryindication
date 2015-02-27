@@ -18,15 +18,5 @@ class SetClient extends Eloquent
 
     }
 
-    public function teste()
-    {
-
-        $jd = SetGraphProduct::find(2);
-        $mc = SetGraphClient::find(4);
-
-        $jd->viewed()->attach($mc);
-
-    }
-
 
 }
