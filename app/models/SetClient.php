@@ -16,6 +16,16 @@ class SetClient extends Eloquent
             )
         );
 
+        $userAttributs = (object) $user->attributes;
+
+        if($userAttributs->id) {
+
+            return array('userId' => $userAttributs->id);
+
+        }
+
+        return array('error' => '205');
+
     }
 
 

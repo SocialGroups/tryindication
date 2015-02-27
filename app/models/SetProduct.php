@@ -18,6 +18,16 @@ class SetProduct extends Eloquent
             )
         );
 
+        $productAttributs = (object) $product->attributes;
+
+        if($productAttributs->id) {
+
+            return array('productId' => $productAttributs->id);
+
+        }
+
+        return array('error' => '205');
+
     }
 
 }

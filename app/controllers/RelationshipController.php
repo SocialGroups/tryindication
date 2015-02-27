@@ -19,7 +19,14 @@ class RelationshipController extends \BaseController
         $post->relationshipType = Input::get('relationshipType');
 
         $setRelationship = new SetGraphRelationship();
-        $setRelationship->setRelationship($post);
+
+        if($post->companyHash AND $post->clientId AND $post->productId AND $post->relationshipType > null){
+
+            return json_encode($setRelationship->setRelationship($post));
+        }
+
+        return json_encode(http_response_code(400));
+
 
 	}
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\Client;
+use Illuminate\Http\Response;
 
 class ClientController extends \BaseController {
 
@@ -26,7 +27,16 @@ class ClientController extends \BaseController {
         $post->clientEmail      = Input::get('clientEmail');
 
         $setProductNeo4j = new SetClient();
-        $setProductNeo4j->client($post);
+
+        if($post->companyHash AND $post->clientId){
+
+
+            return json_encode($setProductNeo4j->client($post));
+
+        }
+
+        return (new Response(json_encode(array('error' => 'campos obrigatorios nao preenchidos!')), 400))
+            ->header('Content-Type', 400);
 	}
 
 

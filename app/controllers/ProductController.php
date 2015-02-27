@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Input;
 use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
+use Illuminate\Http\Response;
 
 class ProductController extends \BaseController {
 
@@ -44,7 +45,14 @@ class ProductController extends \BaseController {
         $post->productStatus    = Input::get('productStatus');
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->createProduct($post);
+
+        if($post->companyHash AND $post->productId AND $post->productPrice AND $post->productImg AND $post->productStatus > null){
+
+            return json_encode($setProductNeo4j->createProduct($post));
+        }
+
+        return (new Response(json_encode(array('error' => 'campos obrigatorios nao preenchidos!')), 400))
+            ->header('Content-Type', 400);
 
 	}
 
