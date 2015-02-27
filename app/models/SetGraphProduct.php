@@ -6,14 +6,9 @@ class SetGraphProduct extends NeoEloquent {
 
     protected $fillable = ['companyHash', 'productId', 'productPrice', 'productImg'];
 
-    public function viewed()
+    public function relationshipType($relationshipType)
     {
-        return $this->belongsToMany('SetGraphProduct', 'VIEWED');
-    }
-
-    public function bought()
-    {
-        return $this->belongsToMany('SetGraphProduct', 'bought');
+        return $this->belongsToMany('SetGraphProduct', $relationshipType);
     }
 
 }
