@@ -13,8 +13,14 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::resource('product', 'ProductController');
+Route::get('product/{companyHash}/{id}', 'ProductController@show');
+
+Route::post('product', 'ProductController@store');
+
+Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
 
 Route::resource('client', 'ClientController');
 
 Route::resource('relationship', 'RelationshipController');
+
+

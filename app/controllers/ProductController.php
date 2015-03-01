@@ -61,14 +61,15 @@ class ProductController extends \BaseController {
 	 * Display the specified resource.
 	 *
 	 * @param  int  $id
+     * @param  int  $companyHash
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($companyHash,$id)
 	{
 
         $indication = new GetIndication();
 
-        return $indication->indication($id);
+        return $indication->indication($companyHash,$id);
 
 	}
 

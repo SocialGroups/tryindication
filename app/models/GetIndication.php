@@ -2,11 +2,15 @@
 
 class GetIndication extends Eloquent
 {
-
-    protected $label = 'client';
-
-    public function indication($id)
+    public function indication($companyHash,$id)
     {
+
+
+        $getIndication = new GetNeo4jIndications();
+
+        return $getIndication->indication($companyHash,$id);
+
+        die;
 
         $redis = Redis::connection();
 
