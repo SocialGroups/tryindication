@@ -43,10 +43,12 @@ class ProductController extends \BaseController {
         $post->productPrice     = Input::get('productPrice');
         $post->productImg       = Input::get('productImg');
         $post->productStatus    = Input::get('productStatus');
+        $post->productName      = Input::get('productName');
+        $post->productUrl       = Input::get('productUrl');
 
         $setProductNeo4j = new SetProduct();
 
-        if($post->companyHash AND $post->productId AND $post->productPrice AND $post->productImg AND $post->productStatus > null){
+        if($post->companyHash AND $post->productId AND $post->productPrice AND $post->productImg AND $post->productStatus AND $post->productName AND $post->productUrl > null){
 
             return json_encode($setProductNeo4j->createProduct($post));
         }
@@ -75,12 +77,12 @@ class ProductController extends \BaseController {
 
 
 	/**
-	 * Show the form for editing the specified resource.
+	 * Update the specified resource in storage.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function update($id)
 	{
         $post = new stdClass();
 
@@ -89,21 +91,11 @@ class ProductController extends \BaseController {
         $post->productPrice     = Input::get('productPrice');
         $post->productImg       = Input::get('productImg');
         $post->productStatus    = Input::get('productStatus');
+        $post->productName      = Input::get('productName');
+        $post->productUrl       = Input::get('productUrl');
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->updateProduct($post);
-	}
-
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
+        $setProductNeo4j->updateProduct($id,$post);
 	}
 
 

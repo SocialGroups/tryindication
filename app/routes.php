@@ -17,6 +17,16 @@ Route::get('product/{companyHash}/{id}', 'ProductController@show');
 
 Route::post('product', 'ProductController@store');
 
+Route::put('product/{id}', 'ProductController@update');
+
+// E-mails Routers
+
+Route::get('email/{companyHash}/{clientId}', 'GetEmailIndicationsController@show');
+
+Route::post('email', 'GetEmailIndicationsController@store');
+
+// E-mails Routers
+
 Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
 
 Route::resource('client', 'ClientController');

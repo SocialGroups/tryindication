@@ -12,7 +12,6 @@ class GetNeo4jIndications extends Eloquent
 
         foreach ($products as $product) {
 
-
             if($product->productId){
 
                 $this->indication($companyHash,$product->productId);
