@@ -3,9 +3,10 @@
 use Illuminate\Support\Facades\Input;
 use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
 use Illuminate\Http\Response;
+use Request\Product as RequestProduct;
 
-class ProductController extends \BaseController {
-
+class ProductController extends \BaseController
+{
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -13,7 +14,19 @@ class ProductController extends \BaseController {
 	 */
 	public function index()
 	{
+		$productRequest = new RequestProduct([
+			'companyHash' 	=> 'Input:companyHash',
+			'id' 			=> 'Input:id',
+			'price' 		=> 'Input:price',
+			'img' 			=> 'Input:img',
+			'status' 		=> 'Input:status'
+		]);
 
+		if (! $productRequest->isValid()) {
+			return $this->errorResponse($productRequest->getError());
+		}
+
+		die('FIM!');
 	}
 
 
@@ -24,7 +37,7 @@ class ProductController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		// @TODO
 	}
 
 
@@ -35,25 +48,20 @@ class ProductController extends \BaseController {
 	 */
 	public function store()
 	{
+		$productRequest = new RequestProduct([
+			'companyHash' 	=> Input::get('companyHash', false),
+			'id' 			=> Input::get('productId', false),
+			'price' 		=> Input::get('productPrice', false),
+			'img' 			=> Input::get('productImg', false),
+			'status' 		=> Input::get('productStatus', false)
+		]);
 
-        $post = new stdClass();
+		if (! $productRequest->isValid()) {
+			return $this->errorResponse($productRequest->getError());
+		}
 
-        $post->companyHash      = Input::get('companyHash');
-        $post->productId        = Input::get('productId');
-        $post->productPrice     = Input::get('productPrice');
-        $post->productImg       = Input::get('productImg');
-        $post->productStatus    = Input::get('productStatus');
-
-        $setProductNeo4j = new SetProduct();
-
-        if($post->companyHash AND $post->productId AND $post->productPrice AND $post->productImg AND $post->productStatus > null){
-
-            return json_encode($setProductNeo4j->createProduct($post));
-        }
-
-        return (new Response(json_encode(array('error' => 'campos obrigatorios nao preenchidos!')), 400))
-            ->header('Content-Type', 400);
-
+		$setProductNeo4j = new SetProduct();
+		return json_encode($setProductNeo4j->createProductNode($productRequest));
 	}
 
 
@@ -65,11 +73,8 @@ class ProductController extends \BaseController {
 	 */
 	public function show($id)
 	{
-
         $indication = new GetIndication();
-
         return $indication->indication($id);
-
 	}
 
 
@@ -81,16 +86,16 @@ class ProductController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-        $post = new stdClass();
-
-        $post->companyHash      = Input::get('companyHash');
-        $post->productId        = Input::get('productId');
-        $post->productPrice     = Input::get('productPrice');
-        $post->productImg       = Input::get('productImg');
-        $post->productStatus    = Input::get('productStatus');
+		$productRequest = new RequestProduct([
+			'companyHash' 	=> Input::get('companyHash', false),
+			'id' 			=> Input::get('productId', false),
+			'price' 		=> Input::get('productPrice', false),
+			'img' 			=> Input::get('productImg', false),
+			'status' 		=> Input::get('productStatus', false)
+		]);
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->updateProduct($post);
+        $setProductNeo4j->updateProduct($productRequest);
 	}
 
 
@@ -118,4 +123,13 @@ class ProductController extends \BaseController {
 	}
 
 
+	protected function errorResponse($msg = '')
+	{
+		$response = new Response();
+		$error = json_encode(['error' => $msg]);
+
+		return $response->setContent($error)
+			->setStatusCode(400)
+			->header('Content-Type', 400);
+	}
 }
