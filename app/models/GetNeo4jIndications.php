@@ -54,7 +54,7 @@ class GetNeo4jIndications extends Eloquent
     }
 
 
-    public function setRedisData($redis,$productId,$companyHash,$dataIndications)
+    protected function setRedisData($redis,$productId,$companyHash,$dataIndications)
     {
 
         $redis->set($companyHash.'_'.$productId, json_encode($dataIndications));
