@@ -1,0 +1,32 @@
+{
+    "name": "lukaskorl/apigen",
+    "description": "Scaffolds restful APIs in Laravel 4",
+    "authors": [
+        {
+            "name": "Lukas Korl",
+            "email": "hello@lukaskorl.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lukaskorl/administrator"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "way/generators": "2.*",
+        "lukaskorl/administrator": "4.11.2.*",
+        "lukaskorl/repository": "0.*"
+    },
+    "require-dev": {
+        "way/generators": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Lukaskorl\\Apigen": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

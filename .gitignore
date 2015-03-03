@@ -1,0 +1,45 @@
+#--------------------------#
+# Global Files Types       #
+#--------------------------#
+.modgit/
+.svn*
+*.bkp
+*.old
+js_bkp/
+js.old/
+sitemap.xml
+*.log
+*.sql
+*.tar.*
+*.gz
+*.rar
+*.zip
+*.bz2
+*.bz
+*.tgz
+*.gzip
+*.tb2
+*.tbz2
+*.pdf
+*.log
+*.swm
+*.swn
+*.swp
+*.swo
+*.db
+
+
+#--------------------------#
+# IDE Project Files/Folder #
+#--------------------------#
+nbproject/
+.idea/
+/.idea/
+
+#--------------------------#
+# NGinx Specific Ignores   #
+#--------------------------#
+50x.html
+404.html
+
+

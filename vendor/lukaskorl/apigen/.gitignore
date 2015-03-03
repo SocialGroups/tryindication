@@ -1,0 +1,7 @@
+src/assets/bower_components/**/*
+/.sass-cache
+/node_modules
+/vendor
+composer.phar
+composer.lock
+.DS_Store

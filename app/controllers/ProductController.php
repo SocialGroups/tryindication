@@ -3,30 +3,10 @@
 use Illuminate\Support\Facades\Input;
 use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
 use Illuminate\Http\Response;
+use Request\Product as RequestProduct;
 
-class ProductController extends \BaseController {
-
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-
-	}
-
-
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
-	}
-
+class ProductController extends \BaseController
+{
 
 	/**
 	 * Store a newly created resource in storage.
@@ -35,27 +15,22 @@ class ProductController extends \BaseController {
 	 */
 	public function store()
 	{
+		$productRequest = new RequestProduct([
+			'companyHash' 	    => Input::get('companyHash', false),
+            'productId' 		=> Input::get('productId', false),
+			'productPrice' 		=> Input::get('productPrice', false),
+			'productImg' 		=> Input::get('productImg', false),
+			'productStatus' 	=> Input::get('productStatus', false),
+            'productName' 		=> Input::get('productName', false),
+            'productUrl' 		=> Input::get('productUrl', false)
+		]);
 
-        $post = new stdClass();
+		if (! $productRequest->isValid()) {
+			return $this->errorResponse($productRequest->getError());
+		}
 
-        $post->companyHash      = Input::get('companyHash');
-        $post->productId        = Input::get('productId');
-        $post->productPrice     = Input::get('productPrice');
-        $post->productImg       = Input::get('productImg');
-        $post->productStatus    = Input::get('productStatus');
-        $post->productName      = Input::get('productName');
-        $post->productUrl       = Input::get('productUrl');
-
-        $setProductNeo4j = new SetProduct();
-
-        if($post->companyHash AND $post->productId AND $post->productPrice AND $post->productImg AND $post->productStatus AND $post->productName AND $post->productUrl > null){
-
-            return json_encode($setProductNeo4j->createProduct($post));
-        }
-
-        return (new Response(json_encode(array('error' => 'campos obrigatorios nao preenchidos!')), 400))
-            ->header('Content-Type', 400);
-
+		$setProductNeo4j = new SetProduct();
+		return json_encode($setProductNeo4j->createProductNode($productRequest));
 	}
 
 
@@ -68,11 +43,9 @@ class ProductController extends \BaseController {
 	 */
 	public function show($companyHash,$id)
 	{
-
         $indication = new GetIndication();
 
         return $indication->indication($companyHash,$id);
-
 	}
 
 
@@ -84,31 +57,32 @@ class ProductController extends \BaseController {
 	 */
 	public function update($id)
 	{
-        $post = new stdClass();
 
-        $post->companyHash      = Input::get('companyHash');
-        $post->productId        = Input::get('productId');
-        $post->productPrice     = Input::get('productPrice');
-        $post->productImg       = Input::get('productImg');
-        $post->productStatus    = Input::get('productStatus');
-        $post->productName      = Input::get('productName');
-        $post->productUrl       = Input::get('productUrl');
+		$productRequest = new RequestProduct([
+			'companyHash' 	    => Input::get('companyHash', false),
+            'productId' 		=> Input::get('productId', false),
+			'productPrice' 		=> Input::get('productPrice', false),
+			'productImg' 		=> Input::get('productImg', false),
+			'productStatus' 	=> Input::get('productStatus', false),
+            'productName' 		=> Input::get('productName', false),
+            'productUrl' 		=> Input::get('productUrl', false)
+		]);
+
+		if (! $productRequest->isValid()) {
+			return $this->errorResponse($productRequest->getError());
+		}
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->updateProduct($id,$post);
+        $setProductNeo4j->updateProduct($id,$productRequest);
 	}
 
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
+	protected function errorResponse($msg = '')
 	{
-		//
+		$response = new Response();
+		$error = json_encode(['error' => $msg]);
+
+		return $response->setContent($error)
+			->setStatusCode(400)
+			->header('Content-Type', 400);
 	}
-
-
 }

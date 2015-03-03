@@ -2,37 +2,31 @@
 
 class SetProduct extends Eloquent
 {
-    public function createProduct($data)
+    public function createProductNode(Request\Product $data)
     {
 
         $product = SetGraphProduct::create(
-
-            array(
-
+            [
                 'productId'     => $data->productId,
                 'companyHash'   => $data->companyHash,
                 'productPrice'  => $data->productPrice,
                 'productImg'    => $data->productImg,
                 'productStatus' => $data->productStatus,
-                'productStatus' => $data->productName,
-                'productStatus' => $data->productUrl
-
-            )
+                'productName'   => $data->productName,
+                'productUrl'    => $data->productUrl
+            ]
         );
 
-        $productAttributs = (object) $product->attributes;
+        $productAttributes = (object) $product->attributes;
 
-        if($productAttributs->id) {
-
-            return array('productId' => $productAttributs->id);
-
+        if ($productAttributes->id) {
+            return ['productId' => $productAttributes->id];
         }
 
-        return array('error' => '205');
-
+        return ['error' => '205'];
     }
 
-    public function updateProduct($id,$data)
+    public function updateProduct($id,Request\Product $data)
     {
 
         $product = SetGraphProduct::find($id);
