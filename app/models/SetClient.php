@@ -2,7 +2,7 @@
 
 class SetClient extends Eloquent
 {
-    public function client($data)
+    public function client(Request\Client $data)
     {
 
         $user = SetGraphClient::create(

@@ -1,7 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Testing\Client;
+use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
 use Illuminate\Http\Response;
+use Request\Client as RequestClient;
 
 class ClientController extends \BaseController {
 
@@ -20,23 +23,19 @@ class ClientController extends \BaseController {
 	public function store()
 	{
 
-        $post = new stdClass();
+        $clientRequest = new RequestClient([
+            'companyHash' 	    => Input::get('companyHash', false),
+            'clientId' 		    => Input::get('clientId', false),
+            'clientEmail' 		=> Input::get('clientEmail', false)
+        ]);
 
-        $post->companyHash      = Input::get('companyHash');
-        $post->clientId         = Input::get('clientId');
-        $post->clientEmail      = Input::get('clientEmail');
+        if (! $clientRequest->isValid()) {
+            return $this->errorResponse($clientRequest->getError());
+        }
 
         $setProductNeo4j = new SetClient();
 
-        if($post->companyHash AND $post->clientId){
-
-
-            return json_encode($setProductNeo4j->client($post));
-
-        }
-
-        return (new Response(json_encode(array('error' => 'campos obrigatorios nao preenchidos!')), 400))
-            ->header('Content-Type', 400);
+        return json_encode($setProductNeo4j->client($clientRequest));
 	}
 
 
@@ -86,6 +85,17 @@ class ClientController extends \BaseController {
 	{
 		//
 	}
+
+    protected function errorResponse($msg = '')
+    {
+        $response = new Response();
+        $error = json_encode(['error' => $msg]);
+
+        return $response->setContent($error)
+            ->setStatusCode(400)
+            ->header('Content-Type', 400);
+    }
+
 
 
 }
