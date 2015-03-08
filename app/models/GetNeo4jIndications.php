@@ -31,7 +31,8 @@ class GetNeo4jIndications extends Eloquent
 
         $queryString = "MATCH (product { productId: '$id' })-[:viewed*2..2]-(friend_of_friend)
                         WHERE NOT (product)-[:viewed]-(friend_of_friend) AND product.companyHash = '$companyHash' AND product.productStatus = 'Activated'
-                        RETURN friend_of_friend.productId, COUNT(*)
+                        RETURN friend_of_friend.productId,friend_of_friend.productPrice, friend_of_friend.productImg, friend_of_friend.productName,
+                        friend_of_friend.productUrl, COUNT(*)
                         ORDER BY COUNT(*) DESC , friend_of_friend.productId
                        ";
 
@@ -42,7 +43,13 @@ class GetNeo4jIndications extends Eloquent
 
         foreach ($result as $row) {
 
-            $dataIndications[] = $row['productId'];
+            $dataIndications[] = array(
+                'productId'     => $row[0],
+                'productPrice'  => $row[1],
+                'productImg'    => $row[2],
+                'productName'   => $row[3],
+                'productUrl'    => $row[4]
+            );
         }
 
         if($dataIndications){
