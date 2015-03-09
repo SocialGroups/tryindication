@@ -28,4 +28,8 @@ return array(
 		'secret' => '',
 	),
 
+    'mandrill' => array(
+        'secret' => 'CS72Sjid1FKKWHtYPUl6eg',
+    ),
+
 );

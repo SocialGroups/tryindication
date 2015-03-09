@@ -11,6 +11,7 @@ class SetClient extends Eloquent
 
                 'clientId'      => $data->clientId,
                 'companyHash'   => $data->companyHash,
+                'clientName'    => $data->clientName,
                 'clientEmail'   => $data->clientEmail
 
             )

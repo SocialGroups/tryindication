@@ -5,15 +5,58 @@ use Illuminate\Support\Facades\DB as DB;
 class SetEmailIndication extends Eloquent
 {
 
-    public function getAllNodes($companyHash,$clientId)
+    public function __construct()
     {
 
-        $client = DB::connection('neo4j')->getClient();
+        $this->connection = DB::connection('neo4j')->getClient();
+
+    }
+
+    public function senderEmail($clientEmail,$productData)
+    {
+
+        $productDecondeData = [];
+
+        foreach($productData as $key => $value) {
+
+            $productDecondeData[$key] = json_decode($value);
+
+        }
+
+        Mail::send('emails.hello', array('productData' => $productDecondeData), function($message) use ($clientEmail)
+        {
+
+            $message->from('tryindication@gmail.com', 'Lucas Santos');
+
+            $message->to($clientEmail, 'Lucas Santos')
+                ->subject('Fala mestre, vamos jogar bola amanhã ?');
+        });
+
+    }
+
+    public function getClinetEmail($clientId)
+    {
+
+        $queryString = "MATCH (c:`client`) where c.clientId = '$clientId' RETURN c.clientEmail LIMIT 25";
+
+        $query  = new \Everyman\Neo4j\Cypher\Query($this->connection, $queryString);
+        $result = $query->getResultSet();
+
+        foreach ($result as $row) {
+
+            return $clientEmail = $row[0]; // Get Client Email
+
+        }
+
+    }
+
+    public function getAllNodes($companyHash,$clientId)
+    {
 
         $queryString = "MATCH (a)-[v:`viewed`]->(b) where a.clientId = '$clientId' AND b.productStatus = 'Activated' AND b.companyHash = '$companyHash'
                         RETURN b.productId,b.productName,b.productImg,b.productPrice,b.productUrl ORDER BY v.created_at DESC LIMIT 3";
 
-        $query  = new \Everyman\Neo4j\Cypher\Query($client, $queryString);
+        $query  = new \Everyman\Neo4j\Cypher\Query($this->connection, $queryString);
         $result = $query->getResultSet();
 
         $dataIndications = [];
@@ -38,6 +81,8 @@ class SetEmailIndication extends Eloquent
             $productsIndication[$product['productId']] = $this->indication($companyHash,$product['productId']);
 
         }
+
+        $this->senderEmail($this->getClinetEmail($clientId),$productsIndication);
 
         return $productsIndication;
 

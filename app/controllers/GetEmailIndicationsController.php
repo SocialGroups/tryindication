@@ -31,17 +31,17 @@ class GetEmailIndicationsController extends \BaseController
     public function store()
     {
 
-        $clientRequest = new RequestClient([
-            'companyHash' 	    => Input::get('companyHash', false),
-            'clientId' 		    => Input::get('clientId', false),
-            'clientEmail' 		=> Input::get('clientEmail', false)
-        ]);
-
-        if (! $clientRequest->isValid()) {
-            return $this->errorResponse($clientRequest->getError());
-        }
-
-        $setIndication = new SetEmailIndication();
+//        $clientRequest = new RequestClient([
+//            'companyHash' 	    => Input::get('companyHash', false),
+//            'clientId' 		    => Input::get('clientId', false),
+//            'clientEmail' 		=> Input::get('clientEmail', false)
+//        ]);
+//
+//        if (! $clientRequest->isValid()) {
+//            return $this->errorResponse($clientRequest->getError());
+//        }
+//
+//        $setIndication = new SetEmailIndication();
     }
 
 }

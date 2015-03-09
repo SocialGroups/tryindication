@@ -26,6 +26,7 @@ class ClientController extends \BaseController {
         $clientRequest = new RequestClient([
             'companyHash' 	    => Input::get('companyHash', false),
             'clientId' 		    => Input::get('clientId', false),
+            'clientName'        => Input::get('clientName', false),
             'clientEmail' 		=> Input::get('clientEmail', false)
         ]);
 

@@ -18,6 +18,7 @@ class Client
     {
         $this->companyHash     = isset($options['companyHash']) ? $options['companyHash'] : '';
         $this->clientId        = isset($options['clientId']) ? $options['clientId'] : '';
+        $this->clientName     = isset($options['clientName']) ? $options['clientName'] : '';
         $this->clientEmail     = isset($options['clientEmail']) ? $options['clientEmail'] : '';
     }
 
