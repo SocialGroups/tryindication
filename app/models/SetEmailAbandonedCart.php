@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\DB as DB;
 
-class SetEmailIndication extends Eloquent
+class SetEmailAbandonedCart extends Eloquent
 {
 
     public function __construct()

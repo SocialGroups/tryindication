@@ -17,7 +17,7 @@ class GetEmailIndicationsController extends \BaseController
     public function show($companyHash,$clientId)
     {
 
-        $setEmailIndications = new SetEmailIndication();
+        $setEmailIndications = new SetEmailAbandonedCart();
 
         return $setEmailIndications->getAllNodes($companyHash,$clientId);
 

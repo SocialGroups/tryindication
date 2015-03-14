@@ -2,246 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba575d27-ba3b-47da-b1c9-200d4101d5ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/emails/hello.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/hello.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Autocompletion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/changelog.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/composer.json.hhvm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/phpspec.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/phpspec.yml.hhvm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/CallbackListenerSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/EmitterSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/EventSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/GeneratorSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/OneTimeListenerSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/PriorityEmitterSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/Stub/DomainEventSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/Stub/EmitterTraitSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/spec/League/Event/Stub/ListenerSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/AbstractEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/AbstractListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/CallbackListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/Emitter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterTrait.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/Event.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/Generator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/GeneratorInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/GeneratorTrait.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/ListenerInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/OneTimeListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/src/PriorityEmitter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/stubs/DomainEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/stubs/EmitterTrait.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/event/stubs/Listener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Model/Users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/AccessTokenStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/AuthCodeStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/ClientStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/RefreshTokenStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/ScopeStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/Storage/SessionStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/api.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/authcode_grant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/config/db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/config/init.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/examples/relational/other_grants.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AbstractServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/AbstractTokenEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/AccessTokenEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/AuthCodeEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/ClientEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/EntityTrait.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/RefreshTokenEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/ScopeEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entity/SessionEntity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Event/ClientAuthenticationFailedEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Event/SessionOwnerEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Event/UserAuthenticationFailedEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/AccessDeniedException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidClientException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidCredentialsException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidGrantException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidRefreshException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidRequestException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/InvalidScopeException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/OAuthException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/ServerErrorException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/UnauthorizedClientException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/UnsupportedGrantTypeException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/UnsupportedResponseTypeException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AbstractGrant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AuthCodeGrant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/ClientCredentialsGrant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/GrantTypeInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/PasswordGrant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/RefreshTokenGrant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResourceServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/AbstractStorage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/AccessTokenInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/AuthCodeInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/ClientInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/RefreshTokenInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/ScopeInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/SessionInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Storage/StorageInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/TokenType/AbstractTokenType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/TokenType/Bearer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/TokenType/TokenTypeInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Util/KeyAlgorithm/DefaultAlgorithm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Util/KeyAlgorithm/KeyAlgorithmInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Util/RedirectUri.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Util/SecureKey.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/behat.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/phpspec.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/phpspec.yml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/AccessTokensTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/AuthCodesTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/ClientsTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/GrantsTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/RefreshTokensTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/ScopesTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/seeds/SessionsTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Authorizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Console/ClientCreatorCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Console/MigrationsCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Console/OAuthControllerCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Facades/AuthorizerFacade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Filters/CheckAuthCodeRequestFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Filters/OAuthFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Filters/OAuthOwnerFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentAccessToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentAdapter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentAuthCode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentRefreshToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentScope.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentSession.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Storage/FluentStorageServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/Support/Migration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/config/oauth2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110151_create_oauth_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110304_create_oauth_grants_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110403_create_oauth_grant_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110459_create_oauth_clients_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110557_create_oauth_client_endpoints_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110705_create_oauth_client_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_110817_create_oauth_client_grants_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111002_create_oauth_sessions_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111109_create_oauth_session_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111254_create_oauth_auth_codes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111403_create_oauth_auth_code_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111518_create_oauth_access_tokens_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111657_create_oauth_access_token_scopes_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/migrations/2014_04_24_111810_create_oauth_refresh_tokens_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/stubs/controller.stub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/functional/bootstrap/FeatureContext.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/functional/bootstrap/OAuthController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/functional/clientcredentials.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/DBTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentAccessTokenTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentAuthCodeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentClientTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentRefreshTokenTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentScopeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/integration/FluentSessionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/unit/LucaDegasperi/OAuth2Server/AuthorizerSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/unit/LucaDegasperi/OAuth2Server/Filters/CheckAuthCodeRequestFilterSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/unit/LucaDegasperi/OAuth2Server/Filters/OAuthFilterSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/tests/unit/LucaDegasperi/OAuth2Server/Filters/OAuthOwnerFilterSpec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Functional/Handler/FirePHPHandlerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/history.md" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/SetEmailIndication.php" afterPath="$PROJECT_DIR$/app/models/SetEmailAbandonedCart.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/Swaggervel" afterPath="$PROJECT_DIR$/vendor/Swaggervel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/.gitignore" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Boris.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Boris.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Query/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/CLIOptionsHandler.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/CLIOptionsHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Request/Client.php" afterPath="$PROJECT_DIR$/app/models/Request/Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ClientController.php" afterPath="$PROJECT_DIR$/app/controllers/ClientController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ColoredInspector.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ColoredInspector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Config.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/ConstructTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/ConstructTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/DiffTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/DiffTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/DumpInspector.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/DumpInspector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/EvalWorker.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/EvalWorker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ExportInspector.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ExportInspector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerLegacyTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerLegacyTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/GelfMessageFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/GelfMessageFormatterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php" afterPath="$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/GettersTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/GettersTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HipChatHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/HipChatHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/HipChatHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/HipChatHandlerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/http/src/Vinelab/Http/HttpServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/vinelab/http/src/Vinelab/Http/HttpServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Inspector.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/Inspector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/MigrationServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/MigrationServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/README.md" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RavenHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RavenHandlerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ReadlineClient.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ReadlineClient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Registry.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Registry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/RelativeTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/RelativeTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/http/src/Vinelab/Http/Request.php" afterPath="$PROJECT_DIR$/vendor/vinelab/http/src/Vinelab/Http/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/SetClient.php" afterPath="$PROJECT_DIR$/app/models/SetClient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/SetEmailIndication.php" afterPath="$PROJECT_DIR$/app/models/SetEmailIndication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/SettersTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/SettersTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ShallowParser.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/Boris/ShallowParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/StringsTest.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/StringsTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SwiftMailerHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/SwiftMailerHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/TestFixture.php" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/TestFixture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/tests/functional/WheresTheTest.php" afterPath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/tests/functional/WheresTheTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/autoload.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/lib/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/bin/boris" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/bin/boris" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/box.json" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/box.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/composer.json" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/composer.json" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/readme.md" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/d11wtq/boris/release.php" afterPath="$PROJECT_DIR$/vendor/d11wtq/boris/release.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.php" afterPath="$PROJECT_DIR$/app/config/services.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tryindication.iml" afterPath="$PROJECT_DIR$/.idea/tryindication.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tryindication.iws" />
@@ -263,126 +28,6 @@
   <component name="FavoritesManager">
     <favorites_list name="tryindication" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="hello.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/emails/hello.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="56.583332" vertical-offset="1568" max-vertical-offset="2370">
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#2;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#3;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#4;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reminder.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/emails/auth/reminder.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="0" selection-end="330" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetEmailIndication.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/SetEmailIndication.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="331" selection-end="331" vertical-scroll-proportion="0.34969324" vertical-offset="0" max-vertical-offset="1680">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ClientController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="33" selection-start="947" selection-end="947" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1560">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="23" selection-start="898" selection-end="904" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -394,7 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/vendor/vinelab/http/src/Vinelab/Http/Request.php" />
         <option value="$PROJECT_DIR$/app/models/Test.php" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
@@ -437,7 +81,6 @@
         <option value="$PROJECT_DIR$/app/models/GetNeo4jIndications.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/services.php" />
-        <option value="$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php" />
         <option value="$PROJECT_DIR$/app/config/mail.php" />
         <option value="$PROJECT_DIR$/app/controllers/ClientController.php" />
         <option value="$PROJECT_DIR$/app/models/Request/Client.php" />
@@ -445,6 +88,8 @@
         <option value="$PROJECT_DIR$/app/views/hello.php" />
         <option value="$PROJECT_DIR$/app/views/emails/hello.blade.php" />
         <option value="$PROJECT_DIR$/app/models/SetEmailIndication.php" />
+        <option value="$PROJECT_DIR$/app/models/SetEmailAbandonedCart.php" />
+        <option value="$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php" />
       </list>
     </option>
   </component>
@@ -526,11 +171,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tryindication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tryindication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="emails" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,7 +246,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="983" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -600,7 +259,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2936508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -628,9 +287,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -734,9 +393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vinelab/neoeloquent/tests/functional/PolymorphicHyperMorphTo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="666" column="6" selection-start="32216" selection-end="32216" vertical-scroll-proportion="0.34181416" vertical-offset="9651" max-vertical-offset="10755">
-          <folding />
-        </state>
+        <state line="666" column="6" selection-start="32216" selection-end="32216" vertical-scroll-proportion="0.34181416" vertical-offset="9651" max-vertical-offset="10755" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Query/Grammars/CypherGrammar.php">
@@ -791,16 +448,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Validator/Request/Client/Blank.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="263" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="585">
-          <folding />
-        </state>
+        <state line="14" column="27" selection-start="263" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="0.06810442" vertical-offset="0" max-vertical-offset="1335">
-          <folding />
-        </state>
+        <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="0.06810442" vertical-offset="0" max-vertical-offset="1335" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Validator/Request/Product/Blank.php">
@@ -810,221 +463,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Validator/RequestClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="227" selection-end="227" vertical-scroll-proportion="0.20431328" vertical-offset="0" max-vertical-offset="881">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SetProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="81" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="12" column="26" selection-start="227" selection-end="227" vertical-scroll-proportion="0.20431328" vertical-offset="0" max-vertical-offset="881" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Validator/RequestProduct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="391" selection-end="391" vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="904">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="391" selection-end="391" vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="904" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Request/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="276" selection-end="297" vertical-scroll-proportion="0.28207964" vertical-offset="75" max-vertical-offset="1080">
-          <folding />
-        </state>
+        <state line="22" column="0" selection-start="276" selection-end="297" vertical-scroll-proportion="0.28207964" vertical-offset="75" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/GetIndication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="66" selection-end="66" vertical-scroll-proportion="0.07575758" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="4" column="20" selection-start="66" selection-end="66" vertical-scroll-proportion="0.07575758" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/SetRedisDataController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="456" selection-end="456" vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="20" column="37" selection-start="456" selection-end="456" vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="340" selection-end="340" vertical-scroll-proportion="0.24621212" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="13" column="21" selection-start="340" selection-end="340" vertical-scroll-proportion="0.24621212" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="532" selection-end="532" vertical-scroll-proportion="0.3219697" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="17" column="23" selection-start="532" selection-end="532" vertical-scroll-proportion="0.3219697" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/GetNeo4jIndications.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="9" selection-start="1706" selection-end="1706" vertical-scroll-proportion="1.0984849" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
+        <state line="58" column="9" selection-start="1706" selection-end="1706" vertical-scroll-proportion="1.0984849" vertical-offset="0" max-vertical-offset="1140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetRedisInidication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="186" selection-end="215" vertical-scroll-proportion="0.2840909" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="15" column="8" selection-start="186" selection-end="215" vertical-scroll-proportion="0.2840909" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetGraphRelationship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="115" selection-end="167" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="75" selection-end="75" vertical-scroll-proportion="0.056818184" vertical-offset="0" max-vertical-offset="1410">
-          <folding />
-        </state>
+        <state line="8" column="8" selection-start="115" selection-end="167" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="41" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.35582823" vertical-offset="1135" max-vertical-offset="1950">
-          <folding />
-        </state>
+        <state line="95" column="41" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.35582823" vertical-offset="1135" max-vertical-offset="1950" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Request/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="84" selection-start="508" selection-end="508" vertical-scroll-proportion="0.3006135" vertical-offset="55" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="512" selection-end="512" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="795">
-          <folding>
-            <element signature="e#7#44#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="84" selection-start="508" selection-end="508" vertical-scroll-proportion="0.3006135" vertical-offset="55" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="53" selection-start="373" selection-end="373" vertical-scroll-proportion="0.2576687" vertical-offset="0" max-vertical-offset="815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="898" selection-end="904" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="33" selection-start="947" selection-end="947" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1560">
-          <folding />
-        </state>
+        <state line="14" column="53" selection-start="373" selection-end="373" vertical-scroll-proportion="0.2576687" vertical-offset="0" max-vertical-offset="815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/hello.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="56.583332" vertical-offset="1568" max-vertical-offset="2370">
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#1;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#2;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#3;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#4;n#tr#0;n#tbody#0;n#table#1;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#1;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="1568" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/auth/reminder.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="0" selection-end="330" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="8" column="13" selection-start="0" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="300" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SetEmailIndication.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ClientController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="331" selection-end="331" vertical-scroll-proportion="0.34969324" vertical-offset="0" max-vertical-offset="1680">
-          <folding />
+        <state line="36" column="33" selection-start="947" selection-end="947" vertical-scroll-proportion="-0.073619634" vertical-offset="540" max-vertical-offset="1560" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="23" selection-start="898" selection-end="904" vertical-scroll-proportion="0.40490797" vertical-offset="0" max-vertical-offset="815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/SetEmailAbandonedCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="20" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.33128834" vertical-offset="510" max-vertical-offset="1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/SetProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="313" selection-end="313" vertical-scroll-proportion="0.20245399" vertical-offset="0" max-vertical-offset="815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1410" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/GetEmailIndicationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="46" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="795">
+          <folding>
+            <element signature="e#7#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
