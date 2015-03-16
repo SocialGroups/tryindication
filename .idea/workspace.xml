@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba575d27-ba3b-47da-b1c9-200d4101d5ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Validator/Request/MultipleProducts/Blank.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Cyphermultiplenodes/Insert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Request/MultipleProducts.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/MultipleProductsController.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Validator/RequestMultipleProducts.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/SetMultipleProducts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/smime/intermediate.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/smime/intermediate.key" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/smime/sign2.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/smime/sign2.key" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/notes/APPS" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/notes/CHARSETS" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/notes/message.xml" afterPath="" />
@@ -132,7 +138,7 @@
       <file leaf-file-name="SetGraphRelationship.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/SetGraphRelationship.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="104" selection-start="320" selection-end="320" vertical-scroll-proportion="0.18939394" vertical-offset="0" max-vertical-offset="792">
+            <state line="8" column="45" selection-start="144" selection-end="152" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
@@ -755,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetGraphRelationship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="104" selection-start="320" selection-end="320" vertical-scroll-proportion="0.18939394" vertical-offset="0" max-vertical-offset="792">
+        <state line="8" column="45" selection-start="144" selection-end="152" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="792">
           <folding />
         </state>
       </provider>
