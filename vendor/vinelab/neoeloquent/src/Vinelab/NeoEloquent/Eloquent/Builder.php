@@ -9,6 +9,7 @@ use Vinelab\NeoEloquent\Eloquent\Model;
 use Vinelab\NeoEloquent\QueryException;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Builder as IlluminateBuilder;
+use Illuminate\Support\Facades\DB as DB;
 
 class Builder extends IlluminateBuilder {
 
@@ -31,10 +32,12 @@ class Builder extends IlluminateBuilder {
 	 * @param  array  $properties
 	 * @return \Illuminate\Database\Eloquent\Model|static|null
 	 */
-	public function find($id, $properties = array('*'))
-	{
+	public function find($data, $properties = array('*'))
+    {
         // If the dev did not specify the $id as an int it would break
         // so we cast it anyways.
+
+        $id = $data['value'];
 
 		if (is_array($id))
 		{

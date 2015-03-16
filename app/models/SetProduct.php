@@ -29,7 +29,7 @@ class SetProduct extends Eloquent
     public function updateProduct($id,Request\Product $data)
     {
 
-        $product = SetGraphProduct::find($id);
+        $product = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $id));
 
         $product->companyHash   = $data->companyHash;
         $product->productId     = $data->productId;

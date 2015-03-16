@@ -19,6 +19,8 @@ Route::post('product', 'ProductController@store');
 
 Route::put('product/{id}', 'ProductController@update');
 
+Route::post('product/multiple', 'MultipleProductsController@store');
+
 // E-mails Routers
 
 Route::get('email/{companyHash}/{clientId}', 'GetEmailIndicationsController@show');

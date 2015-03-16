@@ -54,10 +54,11 @@ return array(
 
         'neo4j' => [
             'driver' => 'neo4j',
-            'host'   => 'tryindicationdb.sb02.stations.graphenedb.com',
+            'host'   => 'db-f54s57btwspxoom1btre.graphenedb.com',
             'port'   => '24789',
-            'username' => 'tryindicationdb',
-            'password' => 'wKuPKLvwowagc7vRVYD1'
+            'username' => 'tryindicationproduction',
+            'charset'   => 'utf8',
+            'password' => 'QBb9HpLV215yw33E3c92'
         ],
 
 		'mysql' => array(

@@ -89,13 +89,17 @@ class Builder {
 	 * @param  array  $columns
 	 * @return \Illuminate\Database\Eloquent\Model|Collection|static
 	 */
-	public function findMany($id, $columns = array('*'))
+	public function findMany($data, $properties = array('*'))
 	{
-		if (empty($id)) return $this->model->newCollection();
 
-		$this->query->whereIn($this->model->getQualifiedKeyName(), $id);
+        $id         = $data['value'];
+        $keyName    = $data['keyName'];
 
-		return $this->get($columns);
+        if (empty($id)) return $this->model->newCollection();
+
+        $this->query->whereIn($keyName, $id);
+
+        return $this->first($properties);
 	}
 
 	/**
