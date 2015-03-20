@@ -26,7 +26,7 @@ class MultipleProductsController extends \BaseController
 		}
 
 		$setProductNeo4j = new SetMultipleProducts();
-		return json_encode($setProductNeo4j->createProductNode($productMultipleRequest));
+		return json_encode($setProductNeo4j->prepareProduct($productMultipleRequest));
 	}
 
 

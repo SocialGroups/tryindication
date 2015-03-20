@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB as DB;
 class SetMultipleProducts extends Eloquent
 {
 
-    public function createProductNode(Request\MultipleProducts $data)
+    public function prepareProduct(Request\MultipleProducts $data)
     {
 
         $productsData = json_decode($data->productsData, true);
@@ -33,11 +33,11 @@ class SetMultipleProducts extends Eloquent
 
                 $errorSetProduct[$productData['productId']] = $this->errorResponse($productRequest->getError());
 
-            }
+            }else{
 
-            $sucessGetProduct[] = $productData['productId'];
+                $sucessGetProduct[] = $productData['productId'];
 
-            $sucessSetProduct[$productData['productId']] = [
+                $sucessSetProduct[$productData['productId']] = [
                     'companyHash'   => $data->companyHash,
                     'productId'     => $productData['productId'],
                     'productPrice'  => $productData['productPrice'],
@@ -47,8 +47,16 @@ class SetMultipleProducts extends Eloquent
                     'productUrl'    => $productData['productUrl']
                 ];
 
+            }
+
         }
 
+        return $this->createProductNode($sucessGetProduct,$sucessSetProduct,$errorSetProduct);
+
+    }
+
+    public function createProductNode($sucessGetProduct,$sucessSetProduct,$errorSetProduct)
+    {
         $insertMultipleData = New Insert();
         $queryChypherSetData = $insertMultipleData->indication($sucessSetProduct);
 
@@ -56,24 +64,7 @@ class SetMultipleProducts extends Eloquent
         $query  = new \Everyman\Neo4j\Cypher\Query($client, $queryChypherSetData);
         $query->getResultSet();
 
-        $queryGetChypherData = $insertMultipleData->getIndicationNodeIds($data->companyHash,$sucessGetProduct);
-
-        //return $queryGetChypherData;
-
-        $returnQuery = new \Everyman\Neo4j\Cypher\Query($client, $queryGetChypherData);
-        $resultGetNodesIds = $returnQuery->getResultSet();
-
-        $dataIndications = [];
-
-        foreach ($resultGetNodesIds as $row) {
-
-            $dataIndications[] = array(
-                'tryIndicationId'   => $row[0],
-                'productId'         => $row[1]
-            );
-        }
-
-        return $dataIndications;
+        return $sucessGetProduct;
 
     }
 

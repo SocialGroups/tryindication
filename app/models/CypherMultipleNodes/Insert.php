@@ -8,7 +8,10 @@ class Insert
     public function Trataments($property)
     {
 
-        return preg_replace('/[^A-Za-z0-9_]+/i', '', $property);
+        $string = str_replace('"','',$property);
+        $string = str_replace("'","",$string);
+
+        return $string;
 
     }
 
@@ -31,17 +34,16 @@ class Insert
             $productName    = $nodeData['productName'];
             $productUrl     = $nodeData['productUrl'];
 
-            //$queryCypher = sprintf('(:%s {companyHash: \'%s\'');
             $queryCypher = "(:$nodeName ";
 
             $queryCypher .= "{";
             $queryCypher .= "companyHash: '".$companyHash."',";
             $queryCypher .= "productId: '".$productId."',";
-            $queryCypher .= "productPrice: '".$productPrice."',";
-            $queryCypher .= "productImg: '".$productImg."',";
-            $queryCypher .= "productStatus: '".$productStatus."',";
-            $queryCypher .= "productName: '".$productName."',";
-            $queryCypher .= "productUrl: '".$productUrl."'";
+            $queryCypher .= "productPrice: '".$this->Trataments($productPrice)."',";
+            $queryCypher .= "productImg: '".$this->Trataments($productImg)."',";
+            $queryCypher .= "productStatus: '".$this->Trataments($productStatus)."',";
+            $queryCypher .= "productName: '".$this->Trataments($productName)."',";
+            $queryCypher .= "productUrl: '".$this->Trataments($productUrl)."'";
             $queryCypher .= "}";
 
             $queryCypher .= ")";
