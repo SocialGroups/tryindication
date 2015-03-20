@@ -7,33 +7,6 @@ use Request\Product as RequestProduct;
 
 class ProductController extends \BaseController
 {
-
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		$productRequest = new RequestProduct([
-			'companyHash' 	    => Input::get('companyHash', false),
-            'productId' 		=> Input::get('productId', false),
-			'productPrice' 		=> Input::get('productPrice', false),
-			'productImg' 		=> Input::get('productImg', false),
-			'productStatus' 	=> Input::get('productStatus', false),
-            'productName' 		=> Input::get('productName', false),
-            'productUrl' 		=> Input::get('productUrl', false)
-		]);
-
-		if (! $productRequest->isValid()) {
-			return $this->errorResponse($productRequest->getError());
-		}
-
-		$setProductNeo4j = new SetProduct();
-		return json_encode($setProductNeo4j->createProductNode($productRequest));
-	}
-
-
 	/**
 	 * Display the specified resource.
 	 *
@@ -69,17 +42,23 @@ class ProductController extends \BaseController
 		]);
 
 		if (! $productRequest->isValid()) {
-			return $this->errorResponse($productRequest->getError());
+			return $this->errorResponse($id,$productRequest->getError());
 		}
 
         $setProductNeo4j = new SetProduct();
-        $setProductNeo4j->updateProduct($id,$productRequest);
+
+        return json_encode($setProductNeo4j->updateProduct($id,$productRequest));
 	}
 
-	protected function errorResponse($msg = '')
+	protected function errorResponse($id,$msg = '')
 	{
 		$response = new Response();
-		$error = json_encode(['error' => $msg]);
+
+        $error = json_encode([
+            'productId' => $id,
+            'response'  => 'error',
+            'msg'       => $msg
+        ]);
 
 		return $response->setContent($error)
 			->setStatusCode(400)

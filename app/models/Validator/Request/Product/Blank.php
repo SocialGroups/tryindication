@@ -4,7 +4,7 @@ namespace Validator\Request\Product;
 
 class Blank
 {
-    const ERROR  = 'Campo obrigatorios nao preenchido: %s';
+    const ERROR  = 'Campo obrigatorio nao preenchido: %s';
 
     // Attributes to validate
     protected static $attributes = ['companyHash', 'productId', 'productPrice', 'productImg','productName','productUrl'];
