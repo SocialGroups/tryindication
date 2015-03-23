@@ -54,7 +54,7 @@ abstract class ValidatorAbstract
 
     protected function getValidationPath()
     {
-        $validatorClass = preg_replace('/.+Request/', '', get_class($this));
+        $validatorClass = preg_replace('/^.+Request/', '', get_class($this));
         return 'Request/' . $validatorClass;
     }
 }
