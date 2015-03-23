@@ -7,10 +7,9 @@ class SetEmailAbandonedCart extends Eloquent
 
     public function __construct()
     {
-
         $this->connection = DB::connection('neo4j')->getClient();
-
     }
+
 
     public function senderEmail($clientEmail,$productData)
     {
@@ -34,25 +33,22 @@ class SetEmailAbandonedCart extends Eloquent
 
     }
 
+
     public function getClinetEmail($clientId)
     {
-
         $queryString = "MATCH (c:`client`) where c.clientId = '$clientId' RETURN c.clientEmail LIMIT 25";
 
         $query  = new \Everyman\Neo4j\Cypher\Query($this->connection, $queryString);
         $result = $query->getResultSet();
 
         foreach ($result as $row) {
-
             return $clientEmail = $row[0]; // Get Client Email
-
         }
-
     }
+
 
     public function getAllNodes($companyHash,$clientId)
     {
-
         $queryString = "MATCH (a)-[v:`viewed`]->(b) where a.clientId = '$clientId' AND b.productStatus = 'Activated' AND b.companyHash = '$companyHash'
                         RETURN b.productId,b.productName,b.productImg,b.productPrice,b.productUrl ORDER BY v.created_at DESC LIMIT 3";
 
@@ -83,25 +79,19 @@ class SetEmailAbandonedCart extends Eloquent
         }
 
         $this->senderEmail($this->getClinetEmail($clientId),$productsIndication);
-
         return $productsIndication;
-
     }
+
 
     public function indication($companyHash,$id)
     {
-
         $redis = Redis::connection();
-
         return $redis->get($companyHash.'_'.$id);
     }
 
 
     public function setRedisData($redis,$productId,$companyHash,$dataIndications)
     {
-
         $redis->set($companyHash.'_'.$productId, json_encode($dataIndications));
-
     }
-
 }

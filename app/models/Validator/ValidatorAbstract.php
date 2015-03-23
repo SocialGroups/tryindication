@@ -17,7 +17,7 @@ abstract class ValidatorAbstract
 
     public function __construct()
     {
-        $this->fullPath = app_path(self::VALIDATOR_PATH . static::VALIDATION_CLASSES_PATH);
+        $this->fullPath = app_path(self::VALIDATOR_PATH .  $this->getValidationPath());
     }
 
 
@@ -43,11 +43,18 @@ abstract class ValidatorAbstract
         return new $className();
     }
 
+
     protected function classPath($class)
     {
         return sprintf('Validator\\%s\\%s',
-            str_replace(DIRECTORY_SEPARATOR, '\\', static::VALIDATION_CLASSES_PATH),
+            str_replace(DIRECTORY_SEPARATOR, '\\', $this->getValidationPath()),
             basename($class, '.php')
         );
+    }
+
+    protected function getValidationPath()
+    {
+        $validatorClass = preg_replace('/.+Request/', '', get_class($this));
+        return 'Request/' . $validatorClass;
     }
 }

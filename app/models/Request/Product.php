@@ -34,6 +34,7 @@ class Product
         $this->productUrl       = isset($options['productUrl']) ? $options['productUrl'] : '';
     }
 
+
     public function isValid()
     {
         $requestValidator = new RequestProduct($this);
@@ -45,17 +46,22 @@ class Product
         return true;
     }
 
+
     public function getError()
     {
         return $this->error;
     }
 
+
     public function __get($attribute)
     {
         if (isset($this->$attribute)) {
-            return $this->{$attribute};
+            return null;
         }
+
+        return $this->{$attribute};
     }
+
 
     public function __set($attribute, $value)
     {

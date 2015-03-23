@@ -14,6 +14,7 @@ class Client
 
     protected $error;
 
+
     public function __construct(array $options = [])
     {
         $this->companyHash     = isset($options['companyHash']) ? $options['companyHash'] : '';
@@ -21,6 +22,7 @@ class Client
         $this->clientName     = isset($options['clientName']) ? $options['clientName'] : '';
         $this->clientEmail     = isset($options['clientEmail']) ? $options['clientEmail'] : '';
     }
+
 
     public function isValid()
     {
@@ -33,17 +35,22 @@ class Client
         return true;
     }
 
+
     public function getError()
     {
         return $this->error;
     }
 
+
     public function __get($attribute)
     {
-        if (isset($this->$attribute)) {
-            return $this->{$attribute};
+        if (! isset($this->$attribute)) {
+            return null;
         }
+
+        return $this->{$attribute};
     }
+
 
     public function __set($attribute, $value)
     {

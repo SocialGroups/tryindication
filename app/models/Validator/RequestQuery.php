@@ -2,18 +2,18 @@
 
 namespace Validator;
 
-use Request\MultipleProducts as MultipleProducstRequest;
+use Request\Query as QueryRequest;
 
-class RequestMultipleProducts extends ValidatorAbstract
+class RequestQuery extends ValidatorAbstract
 {
-    protected $requestMultipleProduct;
+    protected $queryClient;
 
     protected $error = '';
 
-    public function __construct(MultipleProducstRequest $requestMultipleProduct)
+    public function __construct(QueryRequest $queryClient)
     {
         parent::__construct();
-        $this->requestMultipleProduct = $requestMultipleProduct;
+        $this->queryClient = $queryClient;
     }
 
 
@@ -22,7 +22,7 @@ class RequestMultipleProducts extends ValidatorAbstract
         $classes = $this->validationClasses();
 
         foreach ($classes as $class) {
-            if (! $class->isValid($this->requestMultipleProduct)) {
+            if (! $class->isValid($this->queryClient)) {
                 $this->error = $class->getError();
                 return false;
             }

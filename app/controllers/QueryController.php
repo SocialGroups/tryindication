@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Testing\Client;
 use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
 use Illuminate\Http\Response;
-use Request\Client as RequestClient;
+use Request\Query;
 
-class ClientController extends \BaseController
+class QueryController extends \BaseController
 {
 	/**
 	 * Display a listing of the resource.
@@ -15,27 +15,38 @@ class ClientController extends \BaseController
 	 */
 	public function index()
 	{
+        $query = new Query([
+            'companyHash' 	    => Input::get('companyHash', false),
+            'value' 		    => Input::get('value', false),
+            'popularity'        => 0
+        ]);
 
-        $teste = new SetClient();
-        $teste->teste();
+        if (! $query->isValid()) {
+            return $this->errorResponse($query->getError());
+        }
+
+        $ret = SetGraphQuery::add($query);
+
+        echo '<pre>';
+        dd($ret);
 	}
+
 
 	public function store()
 	{
-        $clientRequest = new RequestClient([
+        $query = new RequestQuery([
             'companyHash' 	    => Input::get('companyHash', false),
-            'clientId' 		    => Input::get('clientId', false),
-            'clientName'        => Input::get('clientName', false),
-            'clientEmail' 		=> Input::get('clientEmail', false)
+            'value' 		    => Input::get('value', false),
+            'popularity'        => 0
         ]);
 
-        if (! $clientRequest->isValid()) {
-            return $this->errorResponse($clientRequest->getError());
+        if (! $query->isValid()) {
+            return $this->errorResponse($query->getError());
         }
 
         $setProductNeo4j = new SetClient();
 
-        return json_encode($setProductNeo4j->client($clientRequest));
+        return json_encode($setProductNeo4j->client($query));
 	}
 
 

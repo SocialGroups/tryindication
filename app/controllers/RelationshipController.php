@@ -10,7 +10,6 @@ class RelationshipController extends \BaseController
 	 */
 	public function store()
 	{
-
         $post = new stdClass();
 
         $post->companyHash      = Input::get('companyHash');
@@ -20,15 +19,13 @@ class RelationshipController extends \BaseController
 
         $setRelationship = new SetGraphRelationship();
 
-        if($post->companyHash AND $post->clientId AND $post->productId AND $post->relationshipType > null){
-
+        if ($post->companyHash && $post->clientId && $post->productId && $post->relationshipType > null) {
             return json_encode($setRelationship->setRelationship($post));
         }
 
         return json_encode(http_response_code(400));
-
-
 	}
+
 
 	/**
 	 * Remove the specified resource from storage.
@@ -40,6 +37,4 @@ class RelationshipController extends \BaseController
 	{
 		//
 	}
-
-
 }

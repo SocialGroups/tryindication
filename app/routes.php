@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,8 +10,11 @@
 |
 */
 
+//-- Home
 Route::get('/', 'HomeController@showWelcome');
 
+
+//-- Product
 Route::get('product/{companyHash}/{id}', 'ProductController@show');
 
 Route::post('product', 'ProductController@store');
@@ -21,18 +23,22 @@ Route::put('product/{id}', 'ProductController@update');
 
 Route::post('product/multiple', 'MultipleProductsController@store');
 
-// E-mails Routers
 
+//-- Query
+//Route::post('query', 'QueryController@store');
+
+Route::get('query', 'QueryController@index');
+
+
+// E-mails Routers
 Route::get('email/{companyHash}/{clientId}', 'GetEmailIndicationsController@show');
 
 Route::post('email', 'GetEmailIndicationsController@store');
 
-// E-mails Routers
 
+// E-mails Routers
 Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
 
 Route::resource('client', 'ClientController');
 
 Route::resource('relationship', 'RelationshipController');
-
-

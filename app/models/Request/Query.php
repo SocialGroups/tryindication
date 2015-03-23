@@ -2,27 +2,36 @@
 
 namespace Request;
 
-use Validator\RequestMultipleProducts;
+use Validator\RequestQuery;
 
-class MultipleProducts
+class Query
 {
     protected $companyHash;
 
-    protected $productsData;
+    protected $value;
+
+    protected $popularity;
 
     protected $error;
 
 
     public function __construct(array $options = [])
     {
-        $this->companyHash      = isset($options['companyHash']) ? $options['companyHash'] : '';
-        $this->productsData      = isset($options['productsData']) ? $options['productsData'] : '';
+        $properties = get_object_vars($this);
+        unset($properties['error']);
+        $properties = array_keys($properties);
+
+        foreach ($properties as $property) {
+            if (isset($options[$property])) {
+                $this->{$property} = $options[$property];
+            }
+        }
     }
 
 
     public function isValid()
     {
-        $requestValidator = new RequestMultipleProducts($this);
+        $requestValidator = new RequestQuery($this);
 
         if (! $requestValidator->isValid()) {
             $this->error = $requestValidator->getError();
@@ -30,6 +39,7 @@ class MultipleProducts
         }
         return true;
     }
+
 
     public function getError()
     {

@@ -1,6 +1,7 @@
 <?php
 
-class SetGraphClient extends NeoEloquent {
+class SetGraphClient extends NeoEloquent
+{
 
     protected $label = 'client';
 

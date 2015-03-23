@@ -4,30 +4,19 @@ class SetClient extends Eloquent
 {
     public function client(Request\Client $data)
     {
+        $user = SetGraphClient::create([
+            'clientId'      => $data->clientId,
+            'companyHash'   => $data->companyHash,
+            'clientName'    => $data->clientName,
+            'clientEmail'   => $data->clientEmail
+        ]);
 
-        $user = SetGraphClient::create(
+        $userAttributes = (object) $user->attributes;
 
-            array(
-
-                'clientId'      => $data->clientId,
-                'companyHash'   => $data->companyHash,
-                'clientName'    => $data->clientName,
-                'clientEmail'   => $data->clientEmail
-
-            )
-        );
-
-        $userAttributs = (object) $user->attributes;
-
-        if($userAttributs->id) {
-
-            return array('userId' => $userAttributs->id);
-
+        if ($userAttributes->id) {
+            return array('userId' => $userAttributes->id);
         }
 
         return array('error' => '205');
-
     }
-
-
 }

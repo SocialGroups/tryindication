@@ -6,8 +6,6 @@ use Request\Product as ProductRequest;
 
 class RequestProduct extends ValidatorAbstract
 {
-    const VALIDATION_CLASSES_PATH = 'Request/Product';
-
     protected $requestProduct;
 
     protected $error = '';

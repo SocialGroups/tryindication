@@ -4,29 +4,21 @@ use Illuminate\Support\Facades\DB as DB;
 
 class GetNeo4jIndications extends Eloquent
 {
-
     public function getAllNodes($companyHash)
     {
-
         $products  = SetGraphProduct::with('productId')->get();
 
         foreach ($products as $product) {
-
-            if($product->productId){
-
+            if ($product->productId) {
                 $this->indication($companyHash,$product->productId);
-
             }
-
         }
-
     }
+
 
     public function indication($companyHash,$id)
     {
-
         $redis = Redis::connection();
-
         $client = DB::connection('neo4j')->getClient();
 
         $queryString = "MATCH (product { productId: '$id' })-[:viewed*2..2]-(friend_of_friend)
@@ -42,7 +34,6 @@ class GetNeo4jIndications extends Eloquent
         $dataIndications = [];
 
         foreach ($result as $row) {
-
             $dataIndications[] = array(
                 'productId'     => $row[0],
                 'productPrice'  => $row[1],
@@ -53,19 +44,13 @@ class GetNeo4jIndications extends Eloquent
         }
 
         if($dataIndications){
-
             return $this->setRedisData($redis,$id,$companyHash,$dataIndications);
-
         }
-
     }
 
 
     protected function setRedisData($redis,$productId,$companyHash,$dataIndications)
     {
-
         $redis->set($companyHash.'_'.$productId, json_encode($dataIndications));
-
     }
-
 }

@@ -3,7 +3,7 @@
 class SetProduct extends Eloquent
 {
 
-    public function updateProduct($id,Request\Product $data)
+    public function updateProduct($id, Request\Product $data)
     {
 
         $product = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $id));
@@ -27,12 +27,10 @@ class SetProduct extends Eloquent
 
         }
 
-        return array(
+        return [
             'productId' => $id,
             'response'  => 'error',
             'msg'       => 'the product can not be updated because it does not exist in our database'
-        );
-
+        ];
     }
-
 }

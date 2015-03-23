@@ -10,7 +10,6 @@ class SetMultipleProducts extends Eloquent
 
     public function prepareProduct(Request\MultipleProducts $data)
     {
-
         $productsData = json_decode($data->productsData, true);
 
         $errorSetProduct    = [];
@@ -52,7 +51,6 @@ class SetMultipleProducts extends Eloquent
         }
 
         return $this->createProductNode($sucessGetProduct,$sucessSetProduct,$errorSetProduct);
-
     }
 
     public function createProductNode($sucessGetProduct,$sucessSetProduct,$errorSetProduct)
@@ -77,5 +75,4 @@ class SetMultipleProducts extends Eloquent
             ->setStatusCode(400)
             ->header('Content-Type', 400);
     }
-
 }
