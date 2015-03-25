@@ -34,6 +34,7 @@ sitemap.xml
 #--------------------------#
 nbproject/
 .idea/
+.idea/*
 /.idea/
 /.idea/*
 magicento.xml
