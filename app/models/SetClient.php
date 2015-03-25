@@ -7,21 +7,24 @@ class SetClient extends Eloquent
 
         $user = SetGraphClient::create(
 
-            array(
-
-                'clientId'      => $data->clientId,
+            [
                 'companyHash'   => $data->companyHash,
                 'clientName'    => $data->clientName,
                 'clientEmail'   => $data->clientEmail
+            ]
 
-            )
         );
 
         $userAttributs = (object) $user->attributes;
 
         if($userAttributs->id) {
 
-            return array('userId' => $userAttributs->id);
+            return [
+
+                'response'  => 'sucess',
+                'clientId'  => $userAttributs->id,
+
+            ];
 
         }
 

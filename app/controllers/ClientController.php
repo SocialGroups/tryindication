@@ -15,9 +15,7 @@ class ClientController extends \BaseController {
 	 */
 	public function index()
 	{
-
-        $teste = new SetClient();
-        $teste->teste();
+        //
 	}
 
 	public function store()
@@ -25,7 +23,6 @@ class ClientController extends \BaseController {
 
         $clientRequest = new RequestClient([
             'companyHash' 	    => Input::get('companyHash', false),
-            'clientId' 		    => Input::get('clientId', false),
             'clientName'        => Input::get('clientName', false),
             'clientEmail' 		=> Input::get('clientEmail', false)
         ]);
@@ -47,42 +44,6 @@ class ClientController extends \BaseController {
 	 * @return Response
 	 */
 	public function show($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
 	{
 		//
 	}
