@@ -33,12 +33,10 @@ sitemap.xml
 # IDE Project Files/Folder #
 #--------------------------#
 nbproject/
-.idea/
-.idea/*
-/.idea/
-/.idea/*
+.idea/workspace.xml
+/.idea/work
 magicento.xml
-workspace.xml
+
 
 #--------------------------#
 # NGinx Specific Ignores   #
