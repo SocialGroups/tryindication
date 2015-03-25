@@ -35,6 +35,8 @@ sitemap.xml
 nbproject/
 .idea/
 /.idea/
+magicento.xml
+workspace.xml
 
 #--------------------------#
 # NGinx Specific Ignores   #
