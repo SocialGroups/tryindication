@@ -23,9 +23,9 @@ Route::post('product/multiple', 'MultipleProductsController@store');
 
 // E-mails Routers
 
-Route::get('email/{companyHash}/{clientId}', 'GetEmailIndicationsController@show');
+Route::get('email/{companyHash}/{clientId}', 'AbandonedCartController@show');
 
-Route::post('email', 'GetEmailIndicationsController@store');
+Route::post('email', 'AbandonedCartController@store');
 
 // E-mails Routers
 
