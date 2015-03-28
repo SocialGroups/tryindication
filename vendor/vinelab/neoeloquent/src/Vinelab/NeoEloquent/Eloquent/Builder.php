@@ -32,25 +32,20 @@ class Builder extends IlluminateBuilder {
 	 * @param  array  $properties
 	 * @return \Illuminate\Database\Eloquent\Model|static|null
 	 */
-	public function find($data, $properties = array('*'))
+    public function find($id, $properties = array('*'))
     {
         // If the dev did not specify the $id as an int it would break
         // so we cast it anyways.
-
-        $id = $data['value'];
-
-		if (is_array($id))
-		{
-		    return $this->findMany(array_map(function($id){ return (int) $id; }, $id), $properties);
-		} else {
-
+        if (is_array($id))
+        {
+            return $this->findMany(array_map(function($id){ return (int) $id; }, $id), $properties);
+        } else {
             $id = (int) $id;
         }
+        $this->query->where($this->model->getKeyName() . '('. $this->query->modelAsNode() .')', '=', $id);
+        return $this->first($properties);
+    }
 
-		$this->query->where($this->model->getKeyName() . '('. $this->query->modelAsNode() .')', '=', $id);
-
-		return $this->first($properties);
-	}
 
     /**
      * Declare identifiers to carry over to the next part of the query.

@@ -1,5 +1,6 @@
 <?php
 
+use Customer\CheckCustomer;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Foundation\Testing\Client;
 use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
@@ -45,7 +46,11 @@ class ClientController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+
+        $customer = New CheckCustomer();
+
+        return $customer->indication($id);
+
 	}
 
     protected function errorResponse($msg = '')
