@@ -8,7 +8,7 @@ class SetGraphRelationship extends NeoEloquent
 
         $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $data->productId));
 
-        $client   = SetGraphClient::findMany(array('keyName' => 'clientId','value' => $data->clientId));
+        $client   = SetGraphClient::find($data->clientId);
 
         return $product->relationshipType($data->relationshipType)->attach($client);
 
