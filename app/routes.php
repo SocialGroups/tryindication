@@ -34,5 +34,3 @@ Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
 Route::resource('client', 'ClientController');
 
 Route::resource('relationship', 'RelationshipController');
-
-

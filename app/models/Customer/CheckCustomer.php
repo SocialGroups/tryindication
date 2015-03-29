@@ -25,17 +25,8 @@ class CheckCustomer extends \Eloquent
 
     }
 
-    public function setSession($customerId)
-    {
-
-        \Session::put('customerSessionId'.'_'.$customerId, $customerId);
-
-    }
-
     public function indication($customerId)
     {
-
-        $this->setSession($customerId);
 
         $cacheCustomerId = $this->cacheCustomerRequest($customerId);
 
@@ -44,13 +35,14 @@ class CheckCustomer extends \Eloquent
             return [
 
                 'auth'      => true,
+                'code'      => 200,
                 'response'  => $cacheCustomerId
 
             ];
 
         }
 
-        $client   = SetGraphClient::find($customerId);
+        $client = SetGraphClient::find($customerId);
 
         if($client){
 
@@ -59,6 +51,7 @@ class CheckCustomer extends \Eloquent
             return [
 
                 'auth'      => true,
+                'code'      => 200,
                 'response'  => $client->id
 
             ];
@@ -68,6 +61,7 @@ class CheckCustomer extends \Eloquent
         return [
 
             'auth'      => false,
+            'code'      => 404,
             'response'  => 'Cliente nao existe'
 
         ];
