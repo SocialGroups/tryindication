@@ -1,5 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
+use Vinelab\NeoEloquent\Tests\Functional\Relations\HyperMorphTo\Post;
+use Illuminate\Http\Response;
+use Request\Relationship as RequestRelationship;
+
 class RelationshipController extends \BaseController
 {
 
@@ -11,35 +16,46 @@ class RelationshipController extends \BaseController
 	public function store()
 	{
 
-        $post = new stdClass();
+        $relationshipRequest = new RequestRelationship([
+            'companyHash' 	        => Input::get('companyHash', false),
+            'clientId' 		        => Input::get('clientId', false),
+            'productId' 		    => Input::get('productId', false),
+            'relationshipType' 		=> Input::get('relationshipType', false)
+        ]);
 
-        $post->companyHash      = Input::get('companyHash');
-        $post->clientId         = Input::get('clientId');
-        $post->productId        = Input::get('productId');
-        $post->relationshipType = Input::get('relationshipType');
+        if (! $relationshipRequest->isValid()) {
+
+            return $this->errorResponse($relationshipRequest->getError());
+        }
 
         $setRelationship = new SetGraphRelationship();
 
-        if($post->companyHash AND $post->clientId AND $post->productId AND $post->relationshipType > null){
+        $returnData = $setRelationship->setRelationship($relationshipRequest);
 
-            return json_encode($setRelationship->setRelationship($post));
+        if($returnData['response'] == 400){
+
+            return $this->errorResponse($returnData['msg']);
+
         }
 
-        return json_encode(http_response_code(400));
+        return json_encode($returnData);
 
 
 	}
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
+    protected function errorResponse($msg = '')
+    {
+        $response = new Response();
+
+        $error = json_encode([
+            'response'  => 'error',
+            'msg'       => $msg
+        ]);
+
+        return $response->setContent($error)
+            ->setStatusCode(400)
+            ->header('Content-Type', 400);
+    }
 
 
 }
