@@ -51,9 +51,14 @@ class SetGraphRelationship extends NeoEloquent
 
         $product->relationshipType($data->relationshipType)->attach($client);
 
-        $setQueueIndication = new RedisQueueIndications();
+        $queueData = [
 
-        Queue::push('SendEmail', array('message' => $message));
+            'companyHash'   => $data->companyHash,
+            'productId'     => $data->productId
+
+        ];
+
+        Queue::push('QueueIndications', array('queueData' => $queueData));
 
         return [
 

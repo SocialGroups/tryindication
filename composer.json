@@ -8,7 +8,8 @@
 		"laravel/framework": "4.2.*",
         "vinelab/http": "dev-master",
         "vinelab/neoeloquent": "*",
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": "~4.0",
+		"pda/pheanstalk": "~2.0"
 	},
 	"autoload": {
 		"classmap": [
