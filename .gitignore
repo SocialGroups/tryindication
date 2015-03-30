@@ -33,6 +33,8 @@ sitemap.xml
 # IDE Project Files/Folder #
 #--------------------------#
 nbproject/
+.idea/*
+/.idea/*
 .idea/workspace.xml
 /.idea/workspace.xml
 magicento.xml
