@@ -30,7 +30,7 @@ class RelationshipController extends \BaseController
 
         $setRelationship = new SetGraphRelationship();
 
-        $returnData = $setRelationship->setRelationship($relationshipRequest);
+        $returnData = $setRelationship->queueRelationship($relationshipRequest);
 
         if($returnData['response'] == 400){
 

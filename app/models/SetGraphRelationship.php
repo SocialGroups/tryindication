@@ -30,35 +30,42 @@ class SetGraphRelationship extends NeoEloquent
 
     }
 
-    public function setRelationship(Request\Relationship $data)
+    public function fire($job, $data)
     {
+        $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $data['productId']));
 
-        $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $data->productId));
-
-        $client   = SetGraphClient::find($data->clientId);
+        $client   = SetGraphClient::find($data['clientId']);
 
         if($product == null){
 
-            return $this->dataValidate('product',$product,$data->productId);
+            return $this->dataValidate('product',$product,$data['productId']);
 
         }
 
         if($client == null){
 
-            return $this->dataValidate('client',$client,$data->clientId);
+            return $this->dataValidate('client',$client,$data['clientId']);
 
         }
 
-        $product->relationshipType($data->relationshipType)->attach($client);
+        $product->relationshipType($data['relationshipType'])->attach($client);
 
-        $queueData = [
+        $job->delete();
 
-            'companyHash'   => $data->companyHash,
-            'productId'     => $data->productId
+    }
 
-        ];
+    public function queueRelationship(Request\Relationship $data)
+    {
 
-        Queue::push('QueueIndications', array('queueData' => $queueData));
+        Queue::push('SetGraphRelationship',
+
+            [
+                'productId'             => $data->productId,
+                'clientId'              => $data->clientId,
+                'relationshipType'      => $data->relationshipType
+            ]
+
+        );
 
         return [
 
