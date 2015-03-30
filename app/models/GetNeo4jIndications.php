@@ -30,7 +30,7 @@ class GetNeo4jIndications extends Eloquent
         $client = DB::connection('neo4j')->getClient();
 
         $queryString = "MATCH (product { productId: '$id' })-[:viewed*2..2]-(friend_of_friend)
-                        WHERE NOT (product)-[:viewed]-(friend_of_friend) AND product.companyHash = '$companyHash' AND product.productStatus = 'Activated'
+                        WHERE NOT (product)-[:viewed]-(friend_of_friend) AND product.companyHash = '$companyHash'
                         RETURN friend_of_friend.productId,friend_of_friend.productPrice, friend_of_friend.productImg, friend_of_friend.productName,
                         friend_of_friend.productUrl, COUNT(*)
                         ORDER BY COUNT(*) DESC , friend_of_friend.productId

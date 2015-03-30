@@ -96,7 +96,9 @@ return array(
 
             'cluster' => false,
 
-            'default' => ['host' => '127.0.0.1', 'port' => 6379],
+            'default' => ['host' => '127.0.0.1', 'port' => 6379, 'database' => 0],
+
+            'queueindications' => ['host' => '127.0.0.1', 'port' => 6379, 'database' => 1],
 
         ],
 
@@ -135,6 +137,11 @@ return array(
 			'port'     => 6379,
 			'database' => 0,
 		),
+        'queueindications' => array(
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 1,
+        ),
 
 	),
 
