@@ -36,3 +36,6 @@ Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
 Route::resource('client', 'ClientController');
 
 Route::resource('relationship', 'RelationshipController');
+
+// Rota para recuperar indicações de produtos
+Route::get('indications/{companyHash}/{id}', 'IndicationsController@show');

@@ -37,7 +37,7 @@ class GetNeo4jIndications extends Eloquent
                         WHERE NOT (product)-[:viewed]-(friend_of_friend) AND product.companyHash = '$companyHash'
                         RETURN friend_of_friend.productId,friend_of_friend.productPrice, friend_of_friend.productImg, friend_of_friend.productName,
                         friend_of_friend.productUrl, COUNT(*)
-                        ORDER BY COUNT(*) DESC , friend_of_friend.productId
+                        ORDER BY COUNT(*) DESC , friend_of_friend.productId LIMIT 10
                        ";
 
         $query  = new \Everyman\Neo4j\Cypher\Query($this->neo4j, $queryString);
