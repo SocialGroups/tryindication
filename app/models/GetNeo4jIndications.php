@@ -5,6 +5,14 @@ use Illuminate\Support\Facades\DB as DB;
 class GetNeo4jIndications extends Eloquent
 {
 
+    public function __construct()
+    {
+
+        $this->redis = Redis::connection();
+        $this->neo4j = DB::connection('neo4j')->getClient();
+
+    }
+
     public function getAllNodes($companyHash)
     {
 
@@ -25,10 +33,6 @@ class GetNeo4jIndications extends Eloquent
     public function indication($companyHash,$id)
     {
 
-        $redis = Redis::connection();
-
-        $client = DB::connection('neo4j')->getClient();
-
         $queryString = "MATCH (product { productId: '$id' })-[:viewed*2..2]-(friend_of_friend)
                         WHERE NOT (product)-[:viewed]-(friend_of_friend) AND product.companyHash = '$companyHash'
                         RETURN friend_of_friend.productId,friend_of_friend.productPrice, friend_of_friend.productImg, friend_of_friend.productName,
@@ -36,7 +40,7 @@ class GetNeo4jIndications extends Eloquent
                         ORDER BY COUNT(*) DESC , friend_of_friend.productId
                        ";
 
-        $query  = new \Everyman\Neo4j\Cypher\Query($client, $queryString);
+        $query  = new \Everyman\Neo4j\Cypher\Query($this->neo4j, $queryString);
         $result = $query->getResultSet();
 
         $dataIndications = [];
@@ -54,17 +58,17 @@ class GetNeo4jIndications extends Eloquent
 
         if($dataIndications){
 
-            return $this->setRedisData($redis,$id,$companyHash,$dataIndications);
+            return $this->setRedisData($id,$companyHash,$dataIndications);
 
         }
 
     }
 
 
-    protected function setRedisData($redis,$productId,$companyHash,$dataIndications)
+    protected function setRedisData($productId,$companyHash,$dataIndications)
     {
 
-        $redis->set($companyHash.'_'.$productId, json_encode($dataIndications));
+        $this->redis->set($companyHash.'_'.$productId, json_encode($dataIndications));
 
     }
 

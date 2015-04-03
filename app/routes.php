@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
+Route::get('/processing-indications', 'ProcessingIndicationsController@showWelcome');
+
 Route::get('product/{companyHash}/{id}', 'ProductController@show');
 
 Route::post('product', 'ProductController@store');

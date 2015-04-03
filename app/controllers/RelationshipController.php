@@ -32,9 +32,9 @@ class RelationshipController extends \BaseController
 
         $returnData = $setRelationship->queueRelationship($relationshipRequest);
 
-        if($returnData['response'] == 400){
+        if($returnData['response'] == 204){
 
-            return $this->errorResponse($returnData['msg']);
+            return $this->errorResponse($returnData['msg'],204);
 
         }
 
@@ -43,8 +43,15 @@ class RelationshipController extends \BaseController
 
 	}
 
-    protected function errorResponse($msg = '')
+    protected function errorResponse($msg = '',$errorCode = null)
     {
+
+        if($errorCode == null){
+
+            $errorCode = 204;
+
+        }
+
         $response = new Response();
 
         $error = json_encode([
@@ -53,8 +60,8 @@ class RelationshipController extends \BaseController
         ]);
 
         return $response->setContent($error)
-            ->setStatusCode(400)
-            ->header('Content-Type', 400);
+            ->setStatusCode($errorCode)
+            ->header('Content-Type', $errorCode);
     }
 
 
