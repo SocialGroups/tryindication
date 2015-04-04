@@ -1,9 +1,18 @@
 <?php
 
+set_time_limit(0);
+
 use RedisProcessingIndications\SetRedisProcessingQueue;
 
 class SetGraphRelationship extends NeoEloquent
 {
+
+    public function __construct()
+    {
+
+        $this->redis = Redis::connection('queueIndications');
+
+    }
 
     public function dataValidate($type,$data,$dataId)
     {
@@ -35,25 +44,59 @@ class SetGraphRelationship extends NeoEloquent
     public function fire($job, $data)
     {
 
+       foreach(json_decode($data['relationships']) as $relationshipData){
+
+           $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $relationshipData->productId));
+
+           $client   = SetGraphClient::find($relationshipData->clientId);
+
+           if($product == null){
+
+               return $this->dataValidate('product',$product,$relationshipData->productId);
+
+           }
+
+           if($client == null){
+
+               return $this->dataValidate('client',$client,$relationshipData->clientId);
+
+           }
+
+           $product->relationshipType($relationshipData->relationshipType)->attach($client);
+
+       }
+
         $job->delete();
 
-        $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $data['productId']));
+    }
 
-        $client   = SetGraphClient::find($data['clientId']);
+    public function getQueueData($companyHash)
+    {
 
-        if($product == null){
+        return $this->redis->get($companyHash);
 
-            return $this->dataValidate('product',$product,$data['productId']);
+    }
+
+    public function checkSetProcessingList($data,$queueRelationshipData)
+    {
+
+        if(COUNT($queueRelationshipData) >= 50){
+
+            Queue::push('SetGraphRelationship',
+
+                [
+                    'companyHash'       => $data->companyHash,
+                    'relationships'     => json_encode($queueRelationshipData)
+                ]
+            );
+
+            $this->redis->del($data->companyHash);
+
+            return null;
 
         }
 
-        if($client == null){
-
-            return $this->dataValidate('client',$client,$data['clientId']);
-
-        }
-
-        $product->relationshipType($data['relationshipType'])->attach($client);
+        return $queueRelationshipData;
 
     }
 
@@ -64,15 +107,22 @@ class SetGraphRelationship extends NeoEloquent
         $setQueueProcessing = new SetRedisProcessingQueue();
         $setQueueProcessing->setIndication($data);
 
-        Queue::push('SetGraphRelationship',
+        $queueRelationshipData = json_decode($this->getQueueData($data->companyHash));
 
-            [
-                'productId'             => $data->productId,
-                'clientId'              => $data->clientId,
-                'relationshipType'      => $data->relationshipType,
-                'companyHash'           => $data->companyHash
-            ]
-        );
+        if(!$this->checkSetProcessingList($data,$queueRelationshipData)){
+
+            $queueRelationshipData = [];
+
+        }
+
+        $queueRelationshipData[] = [
+            'productId'             => $data->productId,
+            'clientId'              => $data->clientId,
+            'relationshipType'      => $data->relationshipType,
+            'companyHash'           => $data->companyHash
+        ];
+
+        $this->redis->set($data->companyHash,json_encode($queueRelationshipData));
 
         return [
 

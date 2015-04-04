@@ -190,6 +190,7 @@ abstract class HasOneOrMany extends IlluminateHasOneOrMany implements RelationIn
      */
     public function save(EloquentModel $model, array $properties = array())
     {
+
         $model->save() ? $model : false;
         // Create a new edge relationship for both models
         $edge = $this->getEdge($model, $properties);

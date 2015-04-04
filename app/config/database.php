@@ -137,6 +137,11 @@ return array(
 			'port'     => 6379,
 			'database' => 0,
 		),
+        'queueIndications' => array(
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 2,
+        ),
         'queueIndicationsProcessing' => array(
             'host'     => '127.0.0.1',
             'port'     => 6379,
