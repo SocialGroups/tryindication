@@ -10,7 +10,8 @@ class SetGraphRelationship extends NeoEloquent
     public function __construct()
     {
 
-        $this->redis = Redis::connection('queueIndications');
+        $this->redis        = Redis::connection('queueIndications');
+        $this->redisLast    = Redis::connection('lastVisualization');
 
     }
 
@@ -104,8 +105,14 @@ class SetGraphRelationship extends NeoEloquent
     {
 
         // seta produto na lista para processamento
+
         $setQueueProcessing = new SetRedisProcessingQueue();
+
         $setQueueProcessing->setIndication($data);
+
+        // seta ultimo produto visualizado pelo cliente
+
+        $this->redisLast->set($data->companyHash.'_'.$data->clientId,$data->productId);
 
         $queueRelationshipData = json_decode($this->getQueueData($data->companyHash));
 

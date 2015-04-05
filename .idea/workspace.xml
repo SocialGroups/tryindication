@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba575d27-ba3b-47da-b1c9-200d4101d5ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/LastVisualization.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/Swaggervel" afterPath="$PROJECT_DIR$/vendor/Swaggervel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Relations/HasOneOrMany.php" afterPath="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Relations/HasOneOrMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/IndicationsController.php" afterPath="$PROJECT_DIR$/app/controllers/IndicationsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/SetGraphRelationship.php" afterPath="$PROJECT_DIR$/app/models/SetGraphRelationship.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tryindication.iws" />
@@ -30,19 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RelationshipController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/RelationshipController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="47" selection-start="949" selection-end="949" vertical-scroll-proportion="0.32632744" vertical-offset="140" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SetGraphRelationship.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/SetGraphRelationship.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2115">
+            <state line="107" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="-15.791667" vertical-offset="1226" max-vertical-offset="2220">
               <folding />
             </state>
           </provider>
@@ -51,16 +43,34 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="65" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="690">
+            <state line="42" column="46" selection-start="1301" selection-end="1303" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Builder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
+      <file leaf-file-name="IndicationsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/IndicationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="882" column="5" selection-start="22998" selection-end="22998" vertical-scroll-proportion="0.0" vertical-offset="13230" max-vertical-offset="14955">
+            <state line="36" column="30" selection-start="875" selection-end="875" vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="660">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LastVisualization.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/LastVisualization.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="59" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Indications.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Indications.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="904">
               <folding />
             </state>
           </provider>
@@ -69,7 +79,7 @@
       <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="25" selection-start="3882" selection-end="3898" vertical-scroll-proportion="0.0" vertical-offset="2085" max-vertical-offset="2385">
+            <state line="144" column="25" selection-start="4040" selection-end="4056" vertical-scroll-proportion="-25.166666" vertical-offset="1556" max-vertical-offset="2460">
               <folding />
             </state>
           </provider>
@@ -88,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Edges/Finder.php" />
         <option value="$PROJECT_DIR$/vendor/vinelab/neo4jphp/lib/Everyman/Neo4j/Client.php" />
         <option value="$PROJECT_DIR$/app/models/Cyphermultiplenodes/Insert.php" />
         <option value="$PROJECT_DIR$/vendor/vinelab/neo4jphp/lib/Everyman/Neo4j/Cypher/Query.php" />
@@ -106,7 +115,6 @@
         <option value="$PROJECT_DIR$/app/models/Validator/Request/AbandonedCart/Blank.php" />
         <option value="$PROJECT_DIR$/app/models/Request/AbandonedCart.php" />
         <option value="$PROJECT_DIR$/app/controllers/AbandonedCartController.php" />
-        <option value="$PROJECT_DIR$/app/models/Email/AbandonedCart.php" />
         <option value="$PROJECT_DIR$/app/controllers/CustomerAuthController.php" />
         <option value="$PROJECT_DIR$/app/config/session.php" />
         <option value="$PROJECT_DIR$/app/models/Customer/CheckCustomer.php" />
@@ -129,16 +137,18 @@
         <option value="$PROJECT_DIR$/app/controllers/ProcessingIndicationsController.php" />
         <option value="$PROJECT_DIR$/app/models/GetIndication.php" />
         <option value="$PROJECT_DIR$/app/models/RedisProcessingIndications/Processing.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/controllers/IndicationsController.php" />
         <option value="$PROJECT_DIR$/app/models/GetNeo4jIndications.php" />
-        <option value="$PROJECT_DIR$/app/models/Indications.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Relations/HasMany.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
         <option value="$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Relations/HasOneOrMany.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/app/models/Email/AbandonedCart.php" />
+        <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/models/SetGraphRelationship.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/models/LastVisualization.php" />
+        <option value="$PROJECT_DIR$/app/controllers/IndicationsController.php" />
+        <option value="$PROJECT_DIR$/app/models/Indications.php" />
       </list>
     </option>
   </component>
@@ -173,6 +183,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,13 +230,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tryindication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tryindication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,7 +309,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -294,7 +322,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32112333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32844934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -346,19 +374,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Validator/RequestAbandonedCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="135" selection-end="135" vertical-scroll-proportion="0.12883435" vertical-offset="0" max-vertical-offset="815" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Request/AbandonedCart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="54" selection-start="487" selection-end="487" vertical-scroll-proportion="0.31165645" vertical-offset="46" max-vertical-offset="885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AbandonedCartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="797" selection-end="797" vertical-scroll-proportion="0.5705522" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetGraphClient.php">
@@ -438,11 +456,6 @@
         <state line="19" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.3505535" vertical-offset="0" max-vertical-offset="813" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/GraphClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="5" selection-start="2572" selection-end="2572" vertical-scroll-proportion="-1.3734177" vertical-offset="2240" max-vertical-offset="3030" />
@@ -453,11 +466,6 @@
         <state line="26" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="0.4791155" vertical-offset="0" max-vertical-offset="814" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SetEmailAbandonedCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="11" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/queue.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="71" selection-start="909" selection-end="909" vertical-scroll-proportion="0.07585335" vertical-offset="330" max-vertical-offset="1365" />
@@ -465,12 +473,9 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1509" column="24" selection-start="51047" selection-end="51051" vertical-scroll-proportion="0.19607843" vertical-offset="22485" max-vertical-offset="44640" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Email/AbandonedCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="345" selection-end="345" vertical-scroll-proportion="0.35012284" vertical-offset="0" max-vertical-offset="814" />
+        <state line="1509" column="24" selection-start="51047" selection-end="51051" vertical-scroll-proportion="0.19607843" vertical-offset="22485" max-vertical-offset="44640">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
@@ -488,23 +493,6 @@
         <state line="20" column="36" selection-start="455" selection-end="455" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="0" selection-end="1680" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/IndicationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="478" selection-end="478" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="435" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Indications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="35" selection-start="416" selection-end="416" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/RedisProcessingIndications/Processing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="40" selection-start="699" selection-end="699" vertical-scroll-proportion="0.46460176" vertical-offset="0" max-vertical-offset="904">
@@ -517,24 +505,9 @@
         <state line="16" column="27" selection-start="401" selection-end="401" vertical-scroll-proportion="0.26548672" vertical-offset="0" max-vertical-offset="904" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/GetIndication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="190" selection-end="190" vertical-scroll-proportion="0.14933628" vertical-offset="0" max-vertical-offset="904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/GetNeo4jIndications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="25" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.4568584" vertical-offset="187" max-vertical-offset="1200" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SetGraphProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.03405221" vertical-offset="0" max-vertical-offset="881" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vinelab/neoeloquent/src/Vinelab/NeoEloquent/Eloquent/Relations/BelongsToMany.php">
@@ -549,7 +522,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/RedisProcessingIndications/SetRedisProcessingQueue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="453" selection-end="453" vertical-scroll-proportion="0.34052214" vertical-offset="0" max-vertical-offset="881" />
+        <state line="20" column="30" selection-start="453" selection-end="453" vertical-scroll-proportion="0.34052214" vertical-offset="0" max-vertical-offset="881">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/CypherMultipleNodes/Insert.php">
@@ -572,20 +547,6 @@
         <state line="39" column="5" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.1039823" vertical-offset="461" max-vertical-offset="1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="882" column="5" selection-start="22998" selection-end="22998" vertical-scroll-proportion="0.0" vertical-offset="13230" max-vertical-offset="14955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="25" selection-start="3882" selection-end="3898" vertical-scroll-proportion="0.0" vertical-offset="2085" max-vertical-offset="2385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="698" column="53" selection-start="14983" selection-end="14983" vertical-scroll-proportion="0.19298245" vertical-offset="10005" max-vertical-offset="47010" />
@@ -596,23 +557,108 @@
         <state line="235" column="41" selection-start="7905" selection-end="7905" vertical-scroll-proportion="-6.5433526" vertical-offset="9080" max-vertical-offset="9945" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RelationshipController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="40" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.4590708" vertical-offset="140" max-vertical-offset="1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="882" column="5" selection-start="22998" selection-end="22998" vertical-scroll-proportion="-0.04977876" vertical-offset="13230" max-vertical-offset="14910" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/SetEmailAbandonedCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.09090909" vertical-offset="249" max-vertical-offset="1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Email/AbandonedCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.31526548" vertical-offset="0" max-vertical-offset="904">
+          <folding>
+            <element signature="e#25#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AbandonedCartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="39" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.6117257" vertical-offset="92" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/GetNeo4jIndications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="20" selection-start="571" selection-end="571" vertical-scroll-proportion="0.34181416" vertical-offset="171" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/GetIndication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="188" selection-end="188" vertical-scroll-proportion="0.14933628" vertical-offset="0" max-vertical-offset="904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="33" selection-start="480" selection-end="480" vertical-scroll-proportion="0.2300885" vertical-offset="47" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/SetGraphProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.03318584" vertical-offset="0" max-vertical-offset="904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/GraphClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13274336" vertical-offset="0" max-vertical-offset="904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SetGraphRelationship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2115">
+        <state line="107" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="-15.791667" vertical-offset="1226" max-vertical-offset="2220">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="690">
+        <state line="42" column="46" selection-start="1301" selection-end="1303" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RelationshipController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/IndicationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="949" selection-end="949" vertical-scroll-proportion="0.32632744" vertical-offset="140" max-vertical-offset="1065">
+        <state line="36" column="30" selection-start="875" selection-end="875" vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/LastVisualization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="59" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="25" selection-start="4040" selection-end="4056" vertical-scroll-proportion="-25.166666" vertical-offset="1556" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Indications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="904">
           <folding />
         </state>
       </provider>

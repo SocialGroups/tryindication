@@ -20,4 +20,21 @@ class IndicationsController extends \BaseController
         return $indication->get($companyHash,$productId);
     }
 
+    /**
+     * Display the specified resource from last product visualization.
+     *
+     * @param  int  $companyHash
+     * @param  int  $clientId
+     * @return Response
+     */
+    public function last($companyHash,$clientId)
+    {
+
+        $lastViewProduct = new LastVisualization();
+
+        $indication = new Indications();
+
+        return $indication->get($companyHash,$lastViewProduct->get($companyHash,$clientId));
+    }
+
 }

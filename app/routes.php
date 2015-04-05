@@ -39,3 +39,5 @@ Route::resource('relationship', 'RelationshipController');
 
 // Rota para recuperar indicações de produtos
 Route::get('indications/{companyHash}/{id}', 'IndicationsController@show');
+
+Route::get('indications/last/{companyHash}/{id}', 'IndicationsController@last');
