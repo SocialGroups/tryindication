@@ -27,6 +27,13 @@ class Indications extends Eloquent
 
         }
 
+        return json_encode([
+
+                    'response'  => 'error',
+                    'code'      => 404
+
+                ],true);
+
     }
 
 }
