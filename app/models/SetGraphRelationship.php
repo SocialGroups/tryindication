@@ -3,6 +3,7 @@
 set_time_limit(0);
 
 use RedisProcessingIndications\SetRedisProcessingQueue;
+use Relationships\Data\Send;
 
 class SetGraphRelationship extends NeoEloquent
 {
@@ -81,19 +82,24 @@ class SetGraphRelationship extends NeoEloquent
     public function checkSetProcessingList($data,$queueRelationshipData)
     {
 
-        if(COUNT($queueRelationshipData) >= 50){
+        if(COUNT($queueRelationshipData) >= 200){
 
-            Queue::push('SetGraphRelationship',
+            $processingRelationships = New Send();
+
+            $processingRelationships->_prepareCollection(
 
                 [
-                    'companyHash'       => $data->companyHash,
-                    'relationships'     => json_encode($queueRelationshipData)
+
+                'companyHash'       => $data->companyHash,
+                'relationships'     => json_encode($queueRelationshipData)
+
                 ]
             );
 
-            $this->redis->del($data->companyHash);
-
             return null;
+
+
+           $this->redis->del($data->companyHash);
 
         }
 
