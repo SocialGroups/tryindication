@@ -65,7 +65,7 @@ class Send extends \Eloquent
         $query  = new \Everyman\Neo4j\Cypher\Query($this->connection, $cypherQuery);
         $query->getResultSet();
 
-        var_dump($cypherQuery); die;
+        return true;
 
     }
 

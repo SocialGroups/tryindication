@@ -46,27 +46,18 @@ class SetGraphRelationship extends NeoEloquent
     public function fire($job, $data)
     {
 
-       foreach(json_decode($data['relationships']) as $relationshipData){
+        $processingRelationships = New Send();
 
-           $product  = SetGraphProduct::findMany(array('keyName' => 'productId','value' => $relationshipData->productId));
+        $processingRelationships->_prepareCollection(
 
-           $client   = SetGraphClient::find($relationshipData->clientId);
+            [
 
-           if($product == null){
+                'companyHash'       => $data->companyHash,
+                'relationships'     => $data
 
-               return $this->dataValidate('product',$product,$relationshipData->productId);
+            ]
 
-           }
-
-           if($client == null){
-
-               return $this->dataValidate('client',$client,$relationshipData->clientId);
-
-           }
-
-           $product->relationshipType($relationshipData->relationshipType)->attach($client);
-
-       }
+        );
 
         $job->delete();
 
@@ -82,24 +73,19 @@ class SetGraphRelationship extends NeoEloquent
     public function checkSetProcessingList($data,$queueRelationshipData)
     {
 
-        if(COUNT($queueRelationshipData) >= 200){
+        if(COUNT($queueRelationshipData) >= 50){
 
-            $processingRelationships = New Send();
-
-            $processingRelationships->_prepareCollection(
+            Queue::push('SetGraphRelationship',
 
                 [
-
-                'companyHash'       => $data->companyHash,
-                'relationships'     => json_encode($queueRelationshipData)
-
+                    'companyHash'       => $data->companyHash,
+                    'relationships'     => json_encode($queueRelationshipData)
                 ]
             );
 
+            $this->redis->del($data->companyHash);
+
             return null;
-
-
-           $this->redis->del($data->companyHash);
 
         }
 
