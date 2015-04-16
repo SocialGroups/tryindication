@@ -8,7 +8,7 @@ class AbandonedCart
 {
     protected $companyHash;
 
-    protected $clientId;
+    protected $clientEmail;
 
     protected $productId;
 
@@ -17,7 +17,7 @@ class AbandonedCart
     public function __construct(array $options = [])
     {
         $this->companyHash     = isset($options['companyHash']) ? $options['companyHash'] : '';
-        $this->clientId     = isset($options['clientId']) ? $options['clientId'] : '';
+        $this->clientEmail     = isset($options['clientEmail']) ? $options['clientEmail'] : '';
         $this->productId     = isset($options['productId']) ? $options['productId'] : '';
     }
 

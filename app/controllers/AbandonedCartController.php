@@ -35,7 +35,7 @@ class AbandonedCartController extends \BaseController
 
         $abandonedCartRequest = new RequestAbandonedCart([
             'companyHash' 	    => Input::get('companyHash', false),
-            'clientId' 		    => Input::get('clientId', false),
+            'clientEmail' 		=> Input::get('clientEmail', false),
             'productId'         => Input::get('productId',false)
         ]);
 
@@ -45,7 +45,7 @@ class AbandonedCartController extends \BaseController
 
         $abandonedCart = new AbandonedCart();
 
-        return $abandonedCart->indication($abandonedCartRequest);
+        return $abandonedCart->setQueue($abandonedCartRequest);
     }
 
     protected function errorResponse($id,$msg = '')
