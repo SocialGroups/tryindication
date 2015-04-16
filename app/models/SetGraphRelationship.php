@@ -52,8 +52,8 @@ class SetGraphRelationship extends NeoEloquent
 
             [
 
-                'companyHash'       => $data->companyHash,
-                'relationships'     => $data
+                'companyHash'       => $data['companyHash'],
+                'relationships'     => $data['relationships']
 
             ]
 
@@ -73,7 +73,8 @@ class SetGraphRelationship extends NeoEloquent
     public function checkSetProcessingList($data,$queueRelationshipData)
     {
 
-        if(COUNT($queueRelationshipData) >= 50){
+        if(COUNT($queueRelationshipData) >= 100){
+
 
             Queue::push('SetGraphRelationship',
 
