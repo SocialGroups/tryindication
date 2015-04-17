@@ -37,6 +37,8 @@ Route::resource('client', 'ClientController');
 
 Route::resource('relationship', 'RelationshipController');
 
+Route::resource('search', 'SearchController');
+
 // Rota para recuperar indicações de produtos
 Route::get('indications/companyhash/{companyHash}/product/{id}', 'IndicationsController@show');
 
