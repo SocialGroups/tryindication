@@ -38,7 +38,11 @@ class AbandonedCart extends \Eloquent
 
         $clientEmail = $sendData->clientEmail;
 
-        $this->sendData($sendData,$dataIndications,$clientEmail);
+        if(COUNT($dataIndications) >= 3){
+
+            $this->sendData($sendData,$dataIndications,$clientEmail);
+
+        }
 
         $job->delete();
 
