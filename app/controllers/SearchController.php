@@ -42,7 +42,7 @@ class SearchController extends \BaseController
             return $this->errorResponse($searchRequest->getError());
         }
 
-        die('ok!');
+
 
     }
 
