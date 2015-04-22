@@ -11,33 +11,46 @@
 |
 */
 
-Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/processing-indications', 'ProcessingIndicationsController@showWelcome');
+Route::post('oauth/access_token', function() {
+    return Response::json(Authorizer::issueAccessToken());
+});
 
-Route::get('product/{companyHash}/{id}', 'ProductController@show');
 
-Route::post('product', 'ProductController@store');
+Route::group(['prefix' => 'tryindication/api', 'before' => 'oauth'], function() {
 
-Route::put('product/{id}', 'ProductController@update');
+    Route::get('/', 'HomeController@showWelcome');
+    Route::post('/', 'HomeController@showWelcome');
 
-Route::post('product/multiple', 'MultipleProductsController@store');
 
-// E-mails Routers
 
-Route::get('email/{companyHash}/{clientId}', 'AbandonedCartController@show');
+    Route::get('/processing-indications', 'ProcessingIndicationsController@showWelcome');
 
-Route::post('email', 'AbandonedCartController@store');
+    Route::get('product/{companyHash}/{id}', 'ProductController@show');
 
-// E-mails Routers
+    Route::post('product', 'ProductController@store');
 
-Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
+    Route::put('product/{id}', 'ProductController@update');
 
-Route::resource('client', 'ClientController');
+    Route::post('product/multiple', 'MultipleProductsController@store');
 
-Route::resource('relationship', 'RelationshipController');
+    // E-mails Routers
 
-// Rota para recuperar indicações de produtos
-Route::get('indications/companyhash/{companyHash}/product/{id}', 'IndicationsController@show');
+    Route::get('email/{companyHash}/{clientId}', 'AbandonedCartController@show');
 
-Route::get('indications/last/companyhash/{companyHash}/client/{id}', 'IndicationsController@last');
+    Route::post('email', 'AbandonedCartController@store');
+
+    // E-mails Routers
+
+    Route::get('setredisdata/{companyHash}', 'SetRedisDataController@show');
+
+    Route::resource('client', 'ClientController');
+
+    Route::resource('relationship', 'RelationshipController');
+
+    // Rota para recuperar indicações de produtos
+    Route::get('indications/companyhash/{companyHash}/product/{id}', 'IndicationsController@show');
+
+    Route::get('indications/last/companyhash/{companyHash}/client/{id}', 'IndicationsController@last');
+
+});

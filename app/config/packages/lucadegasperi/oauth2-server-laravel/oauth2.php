@@ -75,7 +75,17 @@ return [
     */
 
     'grant_types' => [
-
+        'client_credentials' => [
+            'class' => '\League\OAuth2\Server\Grant\ClientCredentialsGrant',
+            'access_token_ttl' => 3600
+        ]
+//        'password' => [
+//            'class' => '\League\OAuth2\Server\Grant\PasswordGrant',
+//            'callback' => function($username, $password) {
+//                // return an user ID if valid, otherwise return false
+//            },
+//            'access_token_ttl' => 3600
+//        ]
     ],
 
     /*

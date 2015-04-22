@@ -124,6 +124,10 @@ return array(
         'Vinelab\Http\HttpServiceProvider',
         'Vinelab\NeoEloquent\NeoEloquentServiceProvider',
 
+         // OAUTH
+        'LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider',
+        'LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider',
+
 	),
 
 	/*
@@ -190,6 +194,9 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+
+        // OAUTH
+        'Authorizer'        => 'LucaDegasperi\OAuth2Server\Facades\AuthorizerFacade',
 
 	),
 

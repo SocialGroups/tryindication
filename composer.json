@@ -9,7 +9,8 @@
         "vinelab/http": "dev-master",
         "vinelab/neoeloquent": "*",
         "guzzlehttp/guzzle": "~4.0",
-		"pda/pheanstalk": "~2.0"
+		"pda/pheanstalk": "~2.0",
+        "lucadegasperi/oauth2-server-laravel": "3.*"
 	},
 	"autoload": {
 		"classmap": [

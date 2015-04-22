@@ -17,8 +17,8 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-
-        new Testando();
+        return 'Home page!!';
+        //new Testando();
 
     }
 

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'neo4j',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'tryindication',
 			'username'  => 'root',
-			'password'  => 'lounge0197',
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
