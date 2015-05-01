@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'neo4j',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'tryindication',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'lounge0197',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -147,10 +147,17 @@ return array(
             'port'     => 6379,
             'database' => 2,
         ),
+
         'lastVisualization' => array(
             'host'     => '127.0.0.1',
             'port'     => 6379,
             'database' => 3,
+        ),
+
+        'log' => array(
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 4,
         ),
 
 	),

@@ -11,6 +11,8 @@
 |
 */
 
+use Log\Log;
+
 App::before(function($request)
 {
 	//
@@ -19,7 +21,18 @@ App::before(function($request)
 
 App::after(function($request, $response)
 {
-	//
+
+});
+
+Route::filter('Log', function($route, $request, $response)
+{
+
+    $log = new Log();
+
+    $log->log($request->all()['companyHash'],$request);
+
+    $log->log($request->all()['companyHash'],$response);
+
 });
 
 /*

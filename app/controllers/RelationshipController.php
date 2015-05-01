@@ -46,12 +46,6 @@ class RelationshipController extends \BaseController
     protected function errorResponse($msg = '',$errorCode = null)
     {
 
-        if($errorCode == null){
-
-            $errorCode = 204;
-
-        }
-
         $response = new Response();
 
         $error = json_encode([
@@ -59,8 +53,13 @@ class RelationshipController extends \BaseController
             'msg'       => $msg
         ]);
 
+        if($errorCode){
+
+            $response->setStatusCode($errorCode);
+
+        }
+
         return $response->setContent($error)
-            ->setStatusCode($errorCode)
             ->header('Content-Type', $errorCode);
     }
 

@@ -17,12 +17,11 @@ Route::post('oauth/access_token', function() {
 });
 
 
-Route::group(['prefix' => 'tryindication/api', 'before' => 'oauth'], function() {
+Route::group(['prefix' => 'tryindication/api', 'before' => 'oauth', 'after' => 'Log'], function() {
 
     Route::get('/', 'HomeController@showWelcome');
+
     Route::post('/', 'HomeController@showWelcome');
-
-
 
     Route::get('/processing-indications', 'ProcessingIndicationsController@showWelcome');
 
