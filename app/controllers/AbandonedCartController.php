@@ -35,8 +35,11 @@ class AbandonedCartController extends \BaseController
 
         $abandonedCartRequest = new RequestAbandonedCart([
             'companyHash' 	    => Input::get('companyHash', false),
+            'companyName' 	    => Input::get('companyName', false),
             'clientEmail' 		=> Input::get('clientEmail', false),
-            'productId'         => Input::get('productId',false)
+            'clientName'        => Input::get('clientName', false),
+            'productId'         => Input::get('productId',false),
+            'productName'       => Input::get('productName',false)
         ]);
 
         if (! $abandonedCartRequest->isValid()) {

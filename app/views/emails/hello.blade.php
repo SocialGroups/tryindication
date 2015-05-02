@@ -45,19 +45,15 @@
 
                                         @foreach ($productData as $productArray)
 
-                                            @foreach ($productArray as $product)
-
                                         <tr valign="top">
                                             <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
                                             <td>
-                                                <a style="display:block; margin:0 0 14px;" href="http://pixelbuddha.net/"><img src="{{ $product->productImg }}" width="255" height="150" alt="More" style="display:block; margin:0; border:0; background:#eeeeee;"></a>
-                                                <p style="font-size:14px; line-height:22px; font-weight:bold; color:#333333; margin:0 0 5px;"><a href="http://pixelbuddha.net/" style="color:#6c7e44; text-decoration:none;">{{ $product->productName }}</a></p>
-                                                <p style="margin:0 0 35px; font-size:12px; line-height:18px; color:#333333;">Fusce amet ligula ornare tempus vulputate ipsum semper. Praesent non lorem odio. Fusce sed dui massa, eu viverra erat.</p>
+                                                <a style="display:block; margin:0 0 14px;" href="http://pixelbuddha.net/"><img src="{{ $productArray->productImg }}" width="255" height="150" alt="More" style="display:block; margin:0; border:0; background:#eeeeee;"></a>
+                                                <p style="font-size:14px; line-height:22px; font-weight:bold; color:#333333; margin:0 0 5px;"><a href="{{ $productArray->productUrl }}" style="color:#6c7e44; text-decoration:none;">{{ $productArray->productName }}</a></p>
+                                                <p style="margin:0 0 35px; font-size:12px; line-height:18px; color:#333333;">Por Apenas : {{ $productArray->productPrice }}.</p>
                                             </td>
                                             <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
                                         </tr>
-
-                                            @endforeach
 
                                         @endforeach
 

@@ -7,7 +7,7 @@ class Blank
     const ERROR  = 'Campo obrigatorios nao preenchido: %s';
 
     // Attributes to validate
-    protected static $attributes = ['companyHash','clientEmail','productId'];
+    protected static $attributes = ['companyHash','companyName','clientEmail','clientName','productId','productName'];
 
     protected $error = '';
 

@@ -8,17 +8,26 @@ class AbandonedCart
 {
     protected $companyHash;
 
+    protected $companyName;
+
     protected $clientEmail;
 
+    protected $clientName;
+
     protected $productId;
+
+    protected $productName;
 
     protected $error;
 
     public function __construct(array $options = [])
     {
-        $this->companyHash     = isset($options['companyHash']) ? $options['companyHash'] : '';
-        $this->clientEmail     = isset($options['clientEmail']) ? $options['clientEmail'] : '';
-        $this->productId     = isset($options['productId']) ? $options['productId'] : '';
+        $this->companyHash      = isset($options['companyHash']) ? $options['companyHash'] : '';
+        $this->companyName      = isset($options['companyName']) ? $options['companyName'] : '';
+        $this->clientEmail      = isset($options['clientEmail']) ? $options['clientEmail'] : '';
+        $this->clientName       = isset($options['clientName']) ? $options['clientName'] : '';
+        $this->productId        = isset($options['productId']) ? $options['productId'] : '';
+        $this->productName      = isset($options['productName']) ? $options['productName'] : '';
     }
 
     public function isValid()
