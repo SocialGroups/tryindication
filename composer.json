@@ -12,6 +12,9 @@
 		"pda/pheanstalk": "~2.0",
         "lucadegasperi/oauth2-server-laravel": "3.*"
 	},
+    "require-dev": {
+        "way/generators": "~2.0"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",

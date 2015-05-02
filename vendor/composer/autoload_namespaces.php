@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
+    'Way\\Generators' => array($vendorDir . '/way/generators/src'),
     'Vinelab\\NeoEloquent\\' => array($vendorDir . '/vinelab/neoeloquent/src'),
     'Vinelab\\Http' => array($vendorDir . '/vinelab/http/src'),
     'System' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
