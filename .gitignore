@@ -27,13 +27,13 @@ sitemap.xml
 *.swp
 *.swo
 *.db
-
+.idea
 
 #--------------------------#
 # IDE Project Files/Folder #
 #--------------------------#
 nbproject/
-.idea/
+.idea/*
 /.idea/
 
 #--------------------------#
